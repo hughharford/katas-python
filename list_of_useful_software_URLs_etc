@@ -2,7 +2,7 @@ GENERAL USEFUL SOFTWARE:
     https://www.teamviewer.com/
 
     VS Code
-
+        
     Docker commandline
     
 
@@ -16,6 +16,7 @@ EXTENSIONS TO GET GOING WITH:
         Github Pull Requests and Issues
         git-autoconfig
             see: https://stackoverflow.com/questions/62625513/can-i-log-in-two-different-github-account-in-vscode/66792268
+        Git History 
 
     Files etc
         VSC-Export
