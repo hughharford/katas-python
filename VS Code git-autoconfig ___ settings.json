@@ -1,5 +1,3 @@
-// VS Code git-autoconfig ___ settings.json
-
 {
     "workbench.colorTheme": "Default Dark+",
     "yaml.schemas": {
@@ -12,7 +10,6 @@
     "window.zoomLevel": 2,
     "python.globalModuleInstallation": true,
     
-    // "git-autoconfig.configList": [{'user.email': 'Marvolo@Riddle.Tom', 'user.name': 'Tom Marvolo Riddle'}]
     "git-autoconfig.configList":
         [
             {"user.email": "hugh.harford@poscoconsulting.com", "user.name": "hughharford"}
@@ -20,7 +17,7 @@
         "github.gitAuthentication": true,
         "git-autoconfig.ignoreRootList": [
             "/home/hsth/git/katas-python"
-        ],
+        ]
 
     
 

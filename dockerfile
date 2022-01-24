@@ -1,6 +1,6 @@
 #
 # NOTE: THIS DOCKERFILE IS GENERATED VIA "update.sh"
-#
+#		 ORIGINALLY MS VSCODE dockerfile for dev in container work
 # PLEASE DO NOT EDIT IT DIRECTLY.
 #
 

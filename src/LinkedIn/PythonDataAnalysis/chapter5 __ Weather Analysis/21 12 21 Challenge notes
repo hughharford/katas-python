@@ -1,0 +1,18 @@
+
+
+plot the TEMPERATURE ANOMALY for New York across all available years
+
+define the TEMPERATURE ANOMALY as:
+the year's mean temp minus the midcentury mean
+
+
+the year's mean temp
+********************
+(TMIN + TMAX) / 2
+averaged over all the days of the year
+
+
+midcentury mean
+***************
+(TMIN + TMAX)/2
+averaged over all days of every year 1945-55

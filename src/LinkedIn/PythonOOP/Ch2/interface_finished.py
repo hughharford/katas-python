@@ -27,7 +27,7 @@ class Circle(GraphicShape, JSONify):
         return 3.14 * (self.radius ** 2)
 
     def toJSON(self):
-        return f"{{ \"square\": {str(self.calcArea())} }}"
+        return f"{{ \"Cirlce\": {str(self.calcArea())} }}"
 
 
 c = Circle(10)
