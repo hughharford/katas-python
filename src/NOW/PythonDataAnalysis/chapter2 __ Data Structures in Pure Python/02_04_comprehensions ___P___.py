@@ -39,3 +39,7 @@ print(f"cut1 via comprehension: {cut1}")
 # hsth attempt 2
 cut2 = {i: j for i, j in capitals_by_country.items() if j != "Washington, DC"}
 print(f"cut2 via comprehension?: {cut2}")
+
+
+# load text from a file with a comprehension:
+words = sorted({line.strip().lower() for line in open('words.txt', 'r')})

@@ -114,7 +114,7 @@ RUN set -ex; \
 	rm -f get-pip.py
 
 # HSTH fulfill from requirements.txt
-COPY requirements.txt requirements.txt
+COPY /docs/requirements.txt requirements.txt
 RUN python3 -m pip install -r requirements.txt
 
 
