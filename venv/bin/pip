@@ -1,4 +1,4 @@
-#!/home/hsth/git/katas-python/venv/bin/python3.10
+#!/home/hsth/git/katas-python/venv/bin/python
 # -*- coding: utf-8 -*-
 import re
 import sys
