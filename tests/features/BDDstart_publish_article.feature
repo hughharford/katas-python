@@ -1,4 +1,4 @@
-Feature: Blog
+Feature: Publishing as an example
   Site where you can publish your articles.
 
   Scenario: Publishing articles
