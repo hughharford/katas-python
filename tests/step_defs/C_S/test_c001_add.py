@@ -5,7 +5,7 @@ import src.NOW.CodeSignal.c001_add as add
 # When a and b are added
 # Then the result is a+b
 
-scenarios('../features/C_S/c001_add.feature')
+scenarios('../../features/C_S/c001_add.feature')
 
 #    scenario('../features/C_S/c001_add.feature', 'Add two integers')
 # def test_add():
