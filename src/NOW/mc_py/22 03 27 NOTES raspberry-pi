@@ -1,0 +1,132 @@
+RASPBERRY PI WORKING 
+
+NB >>>>> still operational 21 11 15
+
+* * * * * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NB >>>>> Working files in Python mostly on the Pi
+* * * * * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+Raspberry Pi imager - to create SD images to run on the Raspberry Pi
+********************************************************************
+(install command:    
+		snap install rpi-imager
+)
+CF: https://www.raspberrypi.org/software/
+
+run from the terminal:
+	rpi-imager
+
+
+used the rpi-installer to reset:
+				Debian recommended boot
+
+This worked 21 07 05
+
+
+To find the IP address on the Raspberry Pi
+********************************************************************
+
+Start Terminal
+run:
+   ifconfig -a
+
+likely choose the last 'set' of data you get, and select the 'inet' code. 
+Very likely it starts with 192. Eg:
+                                     192.168.0.10 in the below (2nd line)
+
+wlp63s0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 192.168.0.10  netmask 255.255.255.0  broadcast 192.168.0.255
+        inet6 fe80::682c:f350:11ff:bb70  prefixlen 64  scopeid 0x20<link>
+        ether 00:28:f8:f7:d8:07  txqueuelen 1000  (Ethernet)
+        RX packets 36023  bytes 36781983 (36.7 MB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 21759  bytes 4993488 (4.9 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+
+Confirm this by starting VNC on the Raspberry Pi and the front page shows you the IP address you can connect with
+
+VNC Server ___ Access
+********************************************************************
+posco email
+(firefox account login with browser)
+PPCS220327 - internal 
+
+
+RUN VNC Viewer from Linux Machine
+********************************************************************
+
+on the Desktop, search for VNC
+
+Run VNC, and enter IP address and username and password for RaspberryPi 
+
+as of 21 07 05
+username: 		pi
+pass:			raspberry1602
+
+
+IP address - find via VNC Connect on the Pi:
+*********************************************
+21 08 xx maybe ______________________________ 192.168.43.79 (via HSTH Nokia 7)
+22 03 27 ____________________________________ 192.168.1.97 (Via CommunityBroadband wifi at 12 DHC)
+
+
+VNC needs Relative Pointer Motion enabled, and another 2 settings (1 on the remote machine)
+SEE: 
+	https://help.realvnc.com/hc/en-us/articles/360002254618-VNC-Viewer-Parameter-Reference-#viewer-relativeptr
+Set:
+	RelativePtr to TRUE
+Set these parameters both to TRUE
+	SendPointerEvents
+	VNC Server AcceptPointerEvents 
+	
+HIT F8 and set/unset relative points there
+
+
+
+ABOUT MINECRAFT AND HOW TO PLAY ETC
+***********************************************************************
+https://minecraft.fandom.com/wiki/Tutorials/Beginner%27s_guide#Movement
+
+
+PROGRAMMING WITH R-PI AND MINECRAFT
+______________________________________________________________________
+https://www.raspberry-pi-geek.com/Archive/2014/03/Learning-to-program-with-Minecraft
+
+
+
+<<<<<<<<<<<<<<<  GETTING STARTED WITH MINECRAFT PROJECT                >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+MAIN: https://projects.raspberrypi.org/en/projects/getting-started-with-minecraft-pi
+SETTING BLOCKS: https://projects.raspberrypi.org/en/projects/getting-started-with-minecraft-pi/4
+
+NEXT:
+	Drop blocks as you walk: https://projects.raspberrypi.org/en/projects/getting-started-with-minecraft-pi/5
+ 
+
+
+
+
+<<<<<<<<<<<<<<<  ASTRO PI MINECRAFT PROJECT                            >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+ABOUT THE SENSE HAT
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+https://projects.raspberrypi.org/en/projects/getting-started-with-the-sense-hat
+
+Sense Hat emaulator:
+
+https://www.raspberrypi.org/blog/sense-hat-emulator/
+https://trinket.io/sense-hat
+
+installing the emulator on the RPI:	https://www.raspberrypi.org/blog/desktop-sense-hat-emulator/   THIS WORKED
+
+
+
+
+RASPBERRY PI EMULATOR??
+))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))
+https://mike632t.wordpress.com/2020/06/16/installing-the-raspberry-pi-sense-hat-emulator-on-debian/
+
+
+
+

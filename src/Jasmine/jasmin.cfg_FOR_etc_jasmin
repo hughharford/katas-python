@@ -1,0 +1,12 @@
+[jcli]
+bind             = 127.0.0.1
+port             = 8990
+authentication   = False
+admin_username   = jcliadmin
+# MD5 password digest hex encoded
+admin_password   = 79e9b0aa3f3e7c53e916f7ac47439bcb
+
+log_level        = INFO
+log_file         = /var/log/jasmin/jcli.log
+log_format       = %(asctime)s %(levelname)-8s %(process)d %(message)s
+log_date_format  = %Y-%m-%d %H:%M:%S
