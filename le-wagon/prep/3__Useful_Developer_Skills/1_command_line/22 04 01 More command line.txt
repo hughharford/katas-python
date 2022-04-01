@@ -1,0 +1,707 @@
+(base) hsth@hsth-YOGA-720-13IKB:~$ echo "some lovely quote by Milton"
+some lovely quote by Milton
+(base) hsth@hsth-YOGA-720-13IKB:~$ echo "All is not lost, the unconquerable will, and study of revenge, immortal hate, and the courage never to submit or yield"
+All is not lost, the unconquerable will, and study of revenge, immortal hate, and the courage never to submit or yield
+(base) hsth@hsth-YOGA-720-13IKB:~$ echo "All is not lost, the unconquerable will, and study of revenge, immortal hate, and the courage never to submit or yield"> milton_1.txt
+(base) hsth@hsth-YOGA-720-13IKB:~$ ls
+anaconda3  Downloads  milton_1.txt  Public  Templates
+Desktop    git        Music         snap    tmp
+Documents  hsth_most  Pictures      SSD     Videos
+(base) hsth@hsth-YOGA-720-13IKB:~$ cat milton_1.txt
+All is not lost, the unconquerable will, and study of revenge, immortal hate, and the courage never to submit or yield
+(base) hsth@hsth-YOGA-720-13IKB:~$ ". \n\n" >> milton_1.tx
+. \n\n: command not found
+(base) hsth@hsth-YOGA-720-13IKB:~$ echo ". \n\n" >> milton_1.tx
+(base) hsth@hsth-YOGA-720-13IKB:~$ cat milton_1.txt
+All is not lost, the unconquerable will, and study of revenge, immortal hate, and the courage never to submit or yield
+(base) hsth@hsth-YOGA-720-13IKB:~$ echo ". \n\n" >> milton_1.txt
+(base) hsth@hsth-YOGA-720-13IKB:~$ cat milton_1.txt
+All is not lost, the unconquerable will, and study of revenge, immortal hate, and the courage never to submit or yield
+. \n\n
+(base) hsth@hsth-YOGA-720-13IKB:~$ echo "  To know that which before us lies in daily life, is the prime Wisdom; what is more, is fume, or emptiness, or fond impertinence." >> milton_1.txt
+(base) hsth@hsth-YOGA-720-13IKB:~$ cat milton_1.txt
+All is not lost, the unconquerable will, and study of revenge, immortal hate, and the courage never to submit or yield
+. \n\n
+  To know that which before us lies in daily life, is the prime Wisdom; what is more, is fume, or emptiness, or fond impertinence.
+(base) hsth@hsth-YOGA-720-13IKB:~$ echo "All is not lost, the unconquerable will, and study of revenge, immortal hate, and the courage never to submit or yield"> milton_2.txt
+(base) hsth@hsth-YOGA-720-13IKB:~$ echo "  To know that which before us lies in daily life, is the prime Wisdom; what is more, is fume, or emptiness, or fond impertinence." >> milton_2.txt
+(base) hsth@hsth-YOGA-720-13IKB:~$ diff milton_1.txt milton_2.txt
+2d1
+< . \n\n
+(base) hsth@hsth-YOGA-720-13IKB:~$ cat milton_2.txt milton_1.txt > milton_again.txt
+(base) hsth@hsth-YOGA-720-13IKB:~$ cat milton_3.txt
+cat: milton_3.txt: No such file or directory
+(base) hsth@hsth-YOGA-720-13IKB:~$ cat milton_again.txt
+All is not lost, the unconquerable will, and study of revenge, immortal hate, and the courage never to submit or yield
+  To know that which before us lies in daily life, is the prime Wisdom; what is more, is fume, or emptiness, or fond impertinence.
+All is not lost, the unconquerable will, and study of revenge, immortal hate, and the courage never to submit or yield
+. \n\n
+  To know that which before us lies in daily life, is the prime Wisdom; what is more, is fume, or emptiness, or fond impertinence.
+(base) hsth@hsth-YOGA-720-13IKB:~$ dir
+anaconda3  Downloads  milton_1.tx   milton_again.txt  Public  Templates
+Desktop    git	      milton_1.txt  Music	      snap    tmp
+Documents  hsth_most  milton_2.txt  Pictures	      SSD     Videos
+(base) hsth@hsth-YOGA-720-13IKB:~$ ls
+anaconda3  Downloads  milton_1.tx   milton_again.txt  Public  Templates
+Desktop    git        milton_1.txt  Music             snap    tmp
+Documents  hsth_most  milton_2.txt  Pictures          SSD     Videos
+(base) hsth@hsth-YOGA-720-13IKB:~$ ls milton
+ls: cannot access 'milton': No such file or directory
+(base) hsth@hsth-YOGA-720-13IKB:~$ ls
+anaconda3  Downloads  milton_1.tx   milton_again.txt  Public  Templates
+Desktop    git        milton_1.txt  Music             snap    tmp
+Documents  hsth_most  milton_2.txt  Pictures          SSD     Videos
+(base) hsth@hsth-YOGA-720-13IKB:~$ ls milton*
+milton_1.tx  milton_1.txt  milton_2.txt  milton_again.txt
+(base) hsth@hsth-YOGA-720-13IKB:~$ ls -l milton*
+-rw-rw-r-- 1 hsth hsth   7 Apr  1 14:42 milton_1.tx
+-rw-rw-r-- 1 hsth hsth 257 Apr  1 14:42 milton_1.txt
+-rw-rw-r-- 1 hsth hsth 250 Apr  1 14:43 milton_2.txt
+-rw-rw-r-- 1 hsth hsth 507 Apr  1 14:45 milton_again.txt
+(base) hsth@hsth-YOGA-720-13IKB:~$ rm milton_1.tx
+(base) hsth@hsth-YOGA-720-13IKB:~$ ls -l milton*
+-rw-rw-r-- 1 hsth hsth 257 Apr  1 14:42 milton_1.txt
+-rw-rw-r-- 1 hsth hsth 250 Apr  1 14:43 milton_2.txt
+-rw-rw-r-- 1 hsth hsth 507 Apr  1 14:45 milton_again.txt
+(base) hsth@hsth-YOGA-720-13IKB:~$ ls -rtl milton*
+-rw-rw-r-- 1 hsth hsth 257 Apr  1 14:42 milton_1.txt
+-rw-rw-r-- 1 hsth hsth 250 Apr  1 14:43 milton_2.txt
+-rw-rw-r-- 1 hsth hsth 507 Apr  1 14:45 milton_again.txt
+(base) hsth@hsth-YOGA-720-13IKB:~$ ls -l milton*
+-rw-rw-r-- 1 hsth hsth 257 Apr  1 14:42 milton_1.txt
+-rw-rw-r-- 1 hsth hsth 250 Apr  1 14:43 milton_2.txt
+-rw-rw-r-- 1 hsth hsth 507 Apr  1 14:45 milton_again.txt
+(base) hsth@hsth-YOGA-720-13IKB:~$ ls -a
+.              .config     .local            .python_history
+..             .continuum  milton_1.txt      snap
+.anaconda      Desktop     milton_2.txt      SSD
+anaconda3      Documents   milton_again.txt  .ssh
+.bash_history  Downloads   .mozilla          .sudo_as_admin_successful
+.bash_logout   git         Music             Templates
+.bashrc        .gitconfig  Pictures          tmp
+.cache         .gnupg      .pki              Videos
+.conda         .hardinfo   .profile          .vnc
+.condarc       hsth_most   Public            .vscode
+(base) hsth@hsth-YOGA-720-13IKB:~$ cat bash_history
+cat: bash_history: No such file or directory
+(base) hsth@hsth-YOGA-720-13IKB:~$ cat .bash_history
+docker
+sudo apt install docker.io
+docker
+docker login
+sudo docker login
+ls
+docker build .
+sudo docker build .
+docker
+sudo docker build .
+sudo docker build . -it
+sudo docker build -it .
+sudo docker build .
+docker imags
+docker image
+docker image ls
+sudo docker image ls -a
+sudo docker image prune
+sudo docker image ls -a
+sudo docker image prune -a
+sudo docker image ls -a
+sudo docker build .
+sudo docker image prune -a
+sudo docker build -t hsth_br:01 .
+sudo docker image ls -a
+docker run -it hsth_br:01 /bin/bash
+sudo docker run -it hsth_br:01 /bin/bash
+docker-compose build
+sudo apt  install docker-compose
+docker-compose build
+sudo docker build -t hsth_br:latest .
+ls
+df
+docker run -it hsth_br:01 /bin/bash
+sudo docker run -it hsth_br:01 /bin/bash
+sudo docker build -t firefox:latest .
+docker run -ti --rm -e DISPLAY=$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix firefox:latest
+sudo docker run -ti --rm -e DISPLAY=$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix firefox:latest
+sudo docker build -t firefox:latest .
+sudo docker run -ti --rm -e DISPLAY=$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix firefox:latest
+ls
+cd ..
+ls
+dd
+dd --help
+partimage
+fdisk -l
+sudo fdisk -l
+sudo apt-get install rsync
+rysnc
+snapd rysnc
+snap intall rysnc
+snap install rysnc
+snap rysnc
+snap install rysnc
+rsync -version
+sudo fdisk -l
+lsblk
+lsblk -a
+rsync -avzh /dev/sda /dev/sdb1
+rsync -avzh /media/hsth/CDROM /media/hsth/Extreme SSD
+rsync -avzh /media/hsth/CDROM/home/pi /media/hsth/Extreme\ SSD\pi
+rsync -avzh /media/hsth/CDROM/home/pi /media/hsth/Extreme\ SSD/pi
+rysnc --help
+rsync --help
+rsync -avzh /media/hsth/CDROM/home/pi/_ssh /media/hsth/Extreme\ SSD/pi/.ssh
+rsync -avzh /media/hsth/CDROM/home/pi/_ssh /media/hsth/Extreme\ SSD/pi/.ssh/
+rsync -avzh /media/hsth/CDROM/home/pi/_ssh /media/hsth/Extreme\ SSD/pi/ssh/
+rsync -avzh /media/hsth/CDROM/home/pi/_ssh /media/hsth/Extreme\ SSD/pi/ssh
+sudo rsync -avzh /media/hsth/CDROM/home/pi/_ssh /media/hsth/Extreme\ SSD/pi/ssh/
+rsync -avzh /media/hsth/CDROM/home/pi /media/hsth/Extreme\ SSD/pi
+docker
+docker build .
+sudo docker build .
+echo 'START
+' > .vsclog
+echo 'Importing...
+' >> .vsclog
+echo 'Importing from 'vsc-extensions.txt'...
+' >> .vsclog
+code --force --install-extension 'alexkrechik.cucumberautocomplete' >> .vsclog
+echo 'alexkrechik.cucumberautocomplete' >> .vsclog
+code --force --install-extension 'atlassian.atlascode' >> .vsclog
+echo 'atlassian.atlascode' >> .vsclog
+code --force --install-extension 'batisteo.vscode-django' >> .vsclog
+echo 'batisteo.vscode-django' >> .vsclog
+code --force --install-extension 'donjayamanne.githistory' >> .vsclog
+echo 'donjayamanne.githistory' >> .vsclog
+code --force --install-extension 'donjayamanne.python-environment-manager' >> .vsclog
+echo 'donjayamanne.python-environment-manager' >> .vsclog
+code --force --install-extension 'donjayamanne.python-extension-pack' >> .vsclog
+python /home/hsth/git/easycut-smartbench/test/unit_test_1/test_b_walker.py
+python --version
+python3 --version
+venv
+sudo apt-get install virtualenv
+sudo apt-get install virtualenv -y
+sudo apt install python2
+python2 --version
+python --version
+python3 --version
+cd ~ && aconda.com/archive/Anaconda3-2021.11-Linux-x86_64.sh \
+bash Anaconda3-2021.11-Linux-x86_64.sh \
+cd ~ && \
+cd ~
+mkdir tmp 
+rmdir tmp
+ls
+mkdir tmp 
+ls
+cd temp
+cd tmp
+wget https://repo.anaconda.com/archive/Anaconda3-2021.11-Linux-x86_64.sh
+bash Anaconda3-2021.11-Linux-x86_64.sh
+cd ~
+source .bashrc
+python
+exit
+anaconda-navigator
+rmdir tmp
+exit
+sudo apt-get install -y gnupg2
+git
+ls
+cd git/build-run
+ls
+cd ..
+cd 
+ls
+cd tmp
+ls
+cd 
+ls
+source
+apt-get install source
+sudo apt-get install source
+sudo apt-get install linux-source
+exit
+ls -a
+ls .ssh
+cd .ssh
+ls
+exutr
+exit
+sudo docker run -it --entrypoint "/bin/bash" fc3cc1baa653
+docker
+docker build .
+sudo docker build .
+docker build .
+sudo docker build .
+docker run -it fc3cc1baa653
+sudo docker run -it fc3cc1baa653
+sudo docker run -it --entrypoint "/bin/bash" fc3cc1baa653
+/bin/python2 /home/hsth/.vscode/extensions/donjayamanne.python-environment-manager-1.0.3/pythonFiles/printEnvVariablesToFile.py /tmp/tmp-104494DML8GJPdACSk.txt
+python /home/hsth/git/easycut-smartbench/test/unit_test_1/test_b_walker.py
+conda deactivate
+cd ..
+python venv
+python2 venv
+python --version
+python3 --version
+python2.7 --version
+python2.7 venv
+pip install virtualevn
+pip install virtualenv
+python2.7 pip install virtualenv
+python2.7 pip-install virtualenv
+python2.7 pip install
+python2.7 pip
+sudo apt remove python2
+source /home/hsth/git/easycut-smartbench/venv/bin/activate
+docker build .
+python /home/hsth/git/easycut-smartbench/test/unit_test_1/test_b_walker.py
+sudo apt install virtualenv
+venv
+deactivate
+conda deactivate
+venv
+cd ..
+venv
+conda deactivate
+python2.7.18
+python2.7
+sudo apt remove python2.7
+python2.7
+sudo apt remove python2.7
+conda deactivate
+sudo apt-get autoremove --purge
+python2.7 --version
+sudo apt install -y python2
+python2.7 --version
+cd build-run
+sudo docker build .
+apt-get install VLC
+sudo apt-get install VLC
+conda deactivate
+sudo apt-get install VLC
+snap install spotify
+git config --global --replace-all user.name "hughharford"
+git config --global --replace-all user.email "hugh.harford@poscoconsulting.com"
+cd git/build-run
+ls -a
+ls .git
+ls .git/config
+git config core.sshCommand 'ssh -i ~/.ssh/x'
+ssh-keygen -t rsa -b 4096 -C "hugh.harford@poscoconsulting.com"
+git config core.sshCommand 'ssh -i ~/.ssh/22_03_01_hsth_posco
+'
+sudo systemctl restart ssh
+ssh -T git@github.com
+source /home/hsth/git/easycut-smartbench/venv/bin/activate
+python /home/hsth/git/easycut-smartbench/test/unit_test_1/test_b_walker.py
+conda deactivate
+python /home/hsth/git/easycut-smartbench/test/unit_test_1/test_b_walker.py
+source /home/hsth/git/easycut-smartbench/venv/bin/activate
+python /home/hsth/git/easycut-smartbench/test/unit_test_1/test_b_walker.py
+echo 'START
+' > .vsclog
+echo 'Importing...
+' >> .vsclog
+echo 'Importing from 'vsc-extensions.txt'...
+' >> .vsclog
+code --force --install-extension 'alexkrechik.cucumberautocomplete' >> .vsclog
+echo 'alexkrechik.cucumberautocomplete' >> .vsclog
+code --force --install-extension 'atlassian.atlascode' >> .vsclog
+echo 'atlassian.atlascode' >> .vsclog
+code --force --install-extension 'batisteo.vscode-django' >> .vsclog
+echo 'batisteo.vscode-django' >> .vsclog
+code --force --install-extension 'donjayamanne.githistory' >> .vsclog
+echo 'donjayamanne.githistory' >> .vsclog
+code --force --install-extension 'donjayamanne.python-environment-manager' >> .vsclog
+echo 'donjayamanne.python-environment-manager' >> .vsclog
+code --force --install-extension 'donjayamanne.python-extension-pack' >> .vsclog
+echo 'donjayamanne.python-extension-pack' >> .vsclog
+code --force --install-extension 'eamodio.gitlens' >> .vsclog
+echo 'eamodio.gitlens' >> .vsclog
+code --force --install-extension 'ezzak.current-path' >> .vsclog
+echo 'ezzak.current-path' >> .vsclog
+code --force --install-extension 'giis.git-autoconfig-modified' >> .vsclog
+echo 'giis.git-autoconfig-modified' >> .vsclog
+code --force --install-extension 'IronGeek.vscode-env' >> .vsclog
+echo 'IronGeek.vscode-env' >> .vsclog
+code --force --install-extension 'KevinRose.vsc-python-indent' >> .vsclog
+echo 'KevinRose.vsc-python-indent' >> .vsclog
+code --force --install-extension 'lextudio.restructuredtext' >> .vsclog
+echo 'lextudio.restructuredtext' >> .vsclog
+code --force --install-extension 'ms-azuretools.vscode-docker' >> .vsclog
+echo 'ms-azuretools.vscode-docker' >> .vsclog
+code --force --install-extension 'ms-python.python' >> .vsclog
+echo 'ms-python.python' >> .vsclog
+code --force --install-extension 'ms-python.vscode-pylance' >> .vsclog
+echo 'ms-python.vscode-pylance' >> .vsclog
+code --force --install-extension 'ms-toolsai.jupyter' >> .vsclog
+echo 'ms-toolsai.jupyter' >> .vsclog
+code --force --install-extension 'ms-toolsai.jupyter-keymap' >> .vsclog
+echo 'ms-toolsai.jupyter-keymap' >> .vsclog
+code --force --install-extension 'ms-toolsai.jupyter-renderers' >> .vsclog
+echo 'ms-toolsai.jupyter-renderers' >> .vsclog
+code --force --install-extension 'ms-vscode-remote.remote-containers' >> .vsclog
+echo 'ms-vscode-remote.remote-containers' >> .vsclog
+code --force --install-extension 'ms-vscode-remote.remote-ssh' >> .vsclog
+echo 'ms-vscode-remote.remote-ssh' >> .vsclog
+code --force --install-extension 'ms-vscode-remote.remote-ssh-edit' >> .vsclog
+echo 'ms-vscode-remote.remote-ssh-edit' >> .vsclog
+code --force --install-extension 'ms-vscode-remote.remote-wsl' >> .vsclog
+echo 'ms-vscode-remote.remote-wsl' >> .vsclog
+code --force --install-extension 'ms-vscode-remote.vscode-remote-extensionpack' >> .vsclog
+echo 'ms-vscode-remote.vscode-remote-extensionpack' >> .vsclog
+code --force --install-extension 'ms-vscode.powershell' >> .vsclog
+echo 'ms-vscode.powershell' >> .vsclog
+code --force --install-extension 'njpwerner.autodocstring' >> .vsclog
+echo 'njpwerner.autodocstring' >> .vsclog
+code --force --install-extension 'redhat.java' >> .vsclog
+echo 'redhat.java' >> .vsclog
+code --force --install-extension 'redhat.vscode-yaml' >> .vsclog
+echo 'redhat.vscode-yaml' >> .vsclog
+code --force --install-extension 'sleistner.vscode-fileutils' >> .vsclog
+echo 'sleistner.vscode-fileutils' >> .vsclog
+code --force --install-extension 'TabNine.tabnine-vscode' >> .vsclog
+echo 'TabNine.tabnine-vscode' >> .vsclog
+code --force --install-extension 'trond-snekvik.simple-rst' >> .vsclog
+echo 'trond-snekvik.simple-rst' >> .vsclog
+code --force --install-extension 'VisualStudioExptTeam.vscodeintellicode' >> .vsclog
+echo 'VisualStudioExptTeam.vscodeintellicode' >> .vsclog
+code --force --install-extension 'vscjava.vscode-java-debug' >> .vsclog
+echo 'vscjava.vscode-java-debug' >> .vsclog
+code --force --install-extension 'vscjava.vscode-java-dependency' >> .vsclog
+echo 'vscjava.vscode-java-dependency' >> .vsclog
+code --force --install-extension 'vscjava.vscode-java-pack' >> .vsclog
+echo 'vscjava.vscode-java-pack' >> .vsclog
+code --force --install-extension 'vscjava.vscode-maven' >> .vsclog
+echo 'vscjava.vscode-maven' >> .vsclog
+code --force --install-extension 'wholroyd.jinja' >> .vsclog
+echo 'wholroyd.jinja' >> .vsclog
+echo 'Successfully imported' >> .vsclog
+echo '
+END' >> .vsclog
+source /home/hsth/git/katas-python/venv/bin/activate
+/home/hsth/git/katas-python/venv/bin/python /home/hsth/git/katas-python/src/NOW/test.py
+/home/hsth/git/katas-python/venv/bin/python /home/hsth/git/katas-python/src/RECENT/LinkedIn/PythonEssentials/Chap08/dict.py
+/home/hsth/git/katas-python/venv/bin/python /home/hsth/git/katas-python/src/NOW/test.py
+/home/hsth/git/katas-python/venv/bin/python /home/hsth/git/katas-python/src/RECENT/LinkedIn/PythonEssentials/Chap08/dict.py
+/home/hsth/git/katas-python/venv/bin/python /home/hsth/git/katas-python/src/NOW/test.py
+docker
+docker container ls -a
+sudo docker container ls -a
+source /home/hsth/git/katas-python/venv/bin/activate
+/home/hsth/git/katas-python/venv/bin/python /home/hsth/git/katas-python/src/NOW/mc_py/mc_py_print_in_the_sky.py
+sudo apt-get numpy
+sudo apt-get install numpy
+/home/hsth/git/katas-python/venv/bin/python /home/hsth/git/katas-python/src/NOW/mc_py/mc_py_print_in_the_sky.py
+python 
+sudo apt-get install python-numpy
+import numpy as np
+python3 import numpy as np
+python import numpy as np
+docker
+sudo docker login
+cd src/Jasmine
+ls
+docker-compose up -d
+docker
+docker login
+sudo docker login
+docker-compose up -d
+echo $DOCKER_HOST
+Csudo docker run hello-world
+sudo docker run hello-world
+echo $DOCKER_HOST
+docker-compose up -d
+cd..
+cd ..
+docker-compose up -d
+sudo docker-compose up -d
+telnet 127.0.0.1 8990
+docker
+docker container
+docker container ls 
+sudo docker container ls 
+sudo docker container ls -a
+docker image ls -a
+sudo docker image ls -a
+docker image ls -a
+sudo docker container ls -a
+ls ~/etc
+cd /
+cd .
+ls
+ls etc/jasmin
+ls etc
+sudo docker container ls -a
+ls
+ls /home/etc
+ls /etc
+ls /var/log/jasmin/default-DEMO_CONNECTOR.log
+cat /var/log/jasmin/default-DEMO_CONNECTOR.log
+source /home/hsth/git/katas-python/venv/bin/activate
+docker login
+sudo docker login
+telnet 127.0.0.1 8990
+source /home/hsth/git/katas-python/venv/bin/activate
+pip
+venv
+env
+source /home/hsth/git/easycut-smartbench/venv/bin/activate
+/home/hsth/git/easycut-smartbench/venv/bin/python /home/hsth/git/easycut-smartbench/test/unit_test_1/test_b_walker.py
+source /home/hsth/git/easycut-smartbench/venv/bin/activate
+/home/hsth/git/easycut-smartbench/venv/bin/python /home/hsth/git/easycut-smartbench/test/unit_test_1/test_b_walker.py
+source /home/hsth/git/easycut-smartbench/venv/bin/activate
+/home/hsth/git/easycut-smartbench/venv/bin/python /home/hsth/git/easycut-smartbench/test/boundary_walk_tests/test_b_walker.py
+sudo docker build --pull --rm -f "Dockerfile" -t buildrun:220324 "." 
+sudo docker build --pull --rm -f "Dockerfile" -t buildrun:latest "." 
+source /home/hsth/git/easycut-smartbench/venv/bin/activate
+/home/hsth/git/easycut-smartbench/venv/bin/python /home/hsth/git/easycut-smartbench/test/boundary_walk_tests/test_b_walker.py
+source /home/hsth/git/easycut-smartbench/venv/bin/activate
+/home/hsth/git/easycut-smartbench/venv/bin/python /home/hsth/git/easycut-smartbench/test/boundary_walk_tests/test_b_walker.py
+sudo apt-get install vncviewer
+sudo apt install vncviewer
+cd Downloads
+ls
+sudo apt install VNC-Server-6.9.0-Linux-x64.deb
+pip
+python
+pwd
+ls *.pdf
+ls
+cd pictures
+cd Pictures
+ls
+ls *.png
+ls *.jpg
+pwd
+ls -a
+cd ..
+ls -a
+ls -l
+ls -l-a
+ls -la
+cd .
+ls -la
+ls -a .*
+ls .*
+ls ..
+ls -a /git
+ls -a ./git
+ls ./git
+ls *.dir
+ls ~/git
+git
+cd git
+mkdir git-101
+ls
+cd git-101
+ls
+git init
+touch index.html
+ls
+edit index.html
+gedit index.html
+firefox
+firefox index.html
+git status
+git add *
+git status
+git commit -"CLI first attempt, ssh?"
+git commit --"CLI first attempt, ssh?"
+git commit --message "CLI first attempt, ssh?"
+git status
+git push
+git remote add git-101
+git remote add -m git-101
+git remote add -mt git-101
+git status
+git diff
+git add *
+git status
+/git commit
+git commit
+git commit --message "h2"
+git status
+git log
+git lg
+git push
+git remote add -mt git-101 git@github.com:hughharford/git-101
+git push git-101
+git push --set-upstream git-101 master
+ls ../.config
+gedit ../.config
+gedit .config
+gedit .git/.config
+ls -a
+ls -a .git/
+gedit .git/config
+git push git-101
+git push --set-upstream git-101 master
+ssh -T git@github.com
+git push --set-upstream git-101 master
+git remote set-url origin git@github.com:hughharford/condorgpcell.git
+git remote set-rul master git@github.com:hughharford/git-101
+git remote set-url master git@github.com:hughharford/git-101
+git remote set-url --add master git@github.com:hughharford/git-101
+git remote set-url --add git-101 git@github.com:hughharford/git-101
+git push --set-upstream git-101 master
+ls -al ~/.ssh
+git push --set-upstream git-101 master
+git remote set-url --add git-101 git@github.com:hughharford/git-101
+git push --set-upstream git-101 master
+ls -a .ssh
+cd git/katas-python
+gedit config
+gedit .git/config
+echo hello
+echo goodbye
+yes
+cat
+grep foobar
+tail
+man echo
+echo -n hi
+echo -n hi \n hi \n hello
+echo -n hi \\n hi \\n hello
+echo -n hi \\n hi /n hello
+
+echo -n well, hi \\n hi /n hello
+echo well, hello there
+clear
+echo well, hello there
+echo 'hiya'
+sudo apt update
+sudo apt upgrade
+sudo apt install hardinfo
+hardinfo
+echo "Use 'man echo'"
+man sleep
+sleep 5
+sleep 5000
+cd git/katas-python
+ls
+ls -a
+ls .git
+gedit .git/config
+ls .git
+gedit .git/.gitignore
+ls
+gedit .gitattributes
+rm .git/.gitignore
+ls .git
+cd ~git/git-101
+cd ~/git/git-101
+git branch
+git branch newbranch
+git status
+git checkout newbranch
+git status
+gedit index.html
+firefox index.html
+gedit index.html
+git status
+git add *
+git status
+git commit -m "style and image!"
+git diff
+git log
+git checkout master
+git diff master
+git branch
+git merge --no-ff newbranch
+git commit -m "merged newbranch in"
+git branch
+git branch -d newbranch
+git branch
+ls .git
+ls -a
+gedit config
+gedit .git/config
+git push origin master
+git remote add origin git@github.com:hughharford/git-101.git
+git branch -m master
+git push -u origin master
+git remote -v
+git log
+document viewer
+(base) hsth@hsth-YOGA-720-13IKB:~$ cat bash_history
+cat: bash_history: No such file or directory
+(base) hsth@hsth-YOGA-720-13IKB:~$ ls -a
+.              .config     .local            .python_history
+..             .continuum  milton_1.txt      snap
+.anaconda      Desktop     milton_2.txt      SSD
+anaconda3      Documents   milton_again.txt  .ssh
+.bash_history  Downloads   .mozilla          .sudo_as_admin_successful
+.bash_logout   git         Music             Templates
+.bashrc        .gitconfig  Pictures          tmp
+.cache         .gnupg      .pki              Videos
+.conda         .hardinfo   .profile          .vnc
+.condarc       hsth_most   Public            .vscode
+(base) hsth@hsth-YOGA-720-13IKB:~$ cat .python_history
+exit()
+import numpy as np
+exit()
+(base) hsth@hsth-YOGA-720-13IKB:~$ cat .sudo_as_admin_successful
+(base) hsth@hsth-YOGA-720-13IKB:~$ cat .gitconfig
+[user]
+	name = hughharford
+	email = hugh.harford@poscoconsulting.com
+autocrlf=false(base) hsth@hsth-YOGA-720-13IKB:~$ echo $SHELL
+/bin/bash
+(base) hsth@hsth-YOGA-720-13IKB:~$ mv milton_1.txt m_1.txt
+(base) hsth@hsth-YOGA-720-13IKB:~$ ls *.txt
+m_1.txt  milton_2.txt  milton_again.txt
+(base) hsth@hsth-YOGA-720-13IKB:~$ cp m_1.txt m_2.txt
+(base) hsth@hsth-YOGA-720-13IKB:~$ ls *.txt
+m_1.txt  m_2.txt  milton_2.txt  milton_again.txt
+(base) hsth@hsth-YOGA-720-13IKB:~$ ls ^C
+(base) hsth@hsth-YOGA-720-13IKB:~$ mv milton_1.txt m_1.txt^C
+(base) hsth@hsth-YOGA-720-13IKB:~$ ls *.txt
+m_1.txt  m_2.txt  milton_2.txt  milton_again.txt
+(base) hsth@hsth-YOGA-720-13IKB:~$ rm m_2.txt
+(base) hsth@hsth-YOGA-720-13IKB:~$ ls *.txt
+m_1.txt  milton_2.txt  milton_again.txt
+(base) hsth@hsth-YOGA-720-13IKB:~$ ls m_2.txt
+ls: cannot access 'm_2.txt': No such file or directory
+(base) hsth@hsth-YOGA-720-13IKB:~$ ls
+ls           lscpu        lslocks      lsmod        lspcmcia     
+lsattr       lshw         lslogins     lsns         lspgpot      
+lsblk        lsinitramfs  lsm2bin      lsof         lss3         
+lsb_release  lsipc        lsmem        lspci        lsusb        
+(base) hsth@hsth-YOGA-720-13IKB:~$ ls 
+.anaconda/                 m_1.txt
+anaconda3/                 milton_2.txt
+.bash_history              milton_again.txt
+.bash_logout               .mozilla/
+.bashrc                    Music/
+.cache/                    Pictures/
+.conda/                    .pki/
+.condarc                   .profile
+.config/                   Public/
+.continuum/                .python_history
+Desktop/                   snap/
+Documents/                 SSD/
+Downloads/                 .ssh/
+git/                       .sudo_as_admin_successful
+.gitconfig                 Templates/
+.gnupg/                    tmp/
+.hardinfo/                 Videos/
+hsth_most/                 .vnc/
+.local/                    .vscode/
+(base) hsth@hsth-YOGA-720-13IKB:~$ ls milton_1.txt
+ls: cannot access 'milton_1.txt': No such file or directory
+(base) hsth@hsth-YOGA-720-13IKB:~$ cat milton_1.txt
+cat: milton_1.txt: No such file or directory
+(base) hsth@hsth-YOGA-720-13IKB:~$ ls *.txt
+m_1.txt  milton_2.txt  milton_again.txt
+(base) hsth@hsth-YOGA-720-13IKB:~$ cat milton_2.txt
+All is not lost, the unconquerable will, and study of revenge, immortal hate, and the courage never to submit or yield
+  To know that which before us lies in daily life, is the prime Wisdom; what is more, is fume, or emptiness, or fond impertinence.
+(base) hsth@hsth-YOGA-720-13IKB:~$ cat milton_
+cat: milton_: No such file or directory
+(base) hsth@hsth-YOGA-720-13IKB:~$ ^C
+(base) hsth@hsth-YOGA-720-13IKB:~$ 
+

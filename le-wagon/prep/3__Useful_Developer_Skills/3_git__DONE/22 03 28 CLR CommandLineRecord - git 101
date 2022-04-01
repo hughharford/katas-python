@@ -1,0 +1,646 @@
+(base) hsth@hsth-YOGA-720-13IKB:~$ pwd
+/home/hsth
+(base) hsth@hsth-YOGA-720-13IKB:~$ ls *.pdf
+ls: cannot access '*.pdf': No such file or directory
+(base) hsth@hsth-YOGA-720-13IKB:~$ ls
+anaconda3  Documents  git        Music     Public  SSD        tmp
+Desktop    Downloads  hsth_most  Pictures  snap    Templates  Videos
+(base) hsth@hsth-YOGA-720-13IKB:~$ cd pictures
+bash: cd: pictures: No such file or directory
+(base) hsth@hsth-YOGA-720-13IKB:~$ cd Pictures
+(base) hsth@hsth-YOGA-720-13IKB:~/Pictures$ ls
+'Screenshot from 2022-03-07 11-47-18.png'
+'Screenshot from 2022-03-23 07-14-00.png'
+'Screenshot from 2022-03-28 13-09-31.png'
+(base) hsth@hsth-YOGA-720-13IKB:~/Pictures$ ls *.png
+'Screenshot from 2022-03-07 11-47-18.png'
+'Screenshot from 2022-03-23 07-14-00.png'
+'Screenshot from 2022-03-28 13-09-31.png'
+(base) hsth@hsth-YOGA-720-13IKB:~/Pictures$ ls *.jpg
+ls: cannot access '*.jpg': No such file or directory
+(base) hsth@hsth-YOGA-720-13IKB:~/Pictures$ pwd
+/home/hsth/Pictures
+(base) hsth@hsth-YOGA-720-13IKB:~/Pictures$ ls -a
+ .
+ ..
+'Screenshot from 2022-03-07 11-47-18.png'
+'Screenshot from 2022-03-23 07-14-00.png'
+'Screenshot from 2022-03-28 13-09-31.png'
+(base) hsth@hsth-YOGA-720-13IKB:~/Pictures$ cd ..
+(base) hsth@hsth-YOGA-720-13IKB:~$ ls -a
+.              .conda      .gitconfig  .profile                   tmp
+..             .condarc    .gnupg      Public                     Videos
+.anaconda      .config     hsth_most   .python_history            .vnc
+anaconda3      .continuum  .local      snap                       .vscode
+.bash_history  Desktop     .mozilla    SSD
+.bash_logout   Documents   Music       .ssh
+.bashrc        Downloads   Pictures    .sudo_as_admin_successful
+.cache         git         .pki        Templates
+(base) hsth@hsth-YOGA-720-13IKB:~$ ls -l
+total 56
+drwxrwxr-x 28 hsth hsth 4096 Mar  1 06:21 anaconda3
+drwxr-xr-x  2 hsth hsth 4096 Mar 24 21:31 Desktop
+drwxr-xr-x  2 hsth hsth 4096 Feb 23 08:30 Documents
+drwxr-xr-x  2 hsth hsth 4096 Mar 27 07:13 Downloads
+drwxrwxrwx 18 hsth hsth 4096 Mar 28 14:35 git
+drwxrwxr-x  9 hsth hsth 4096 Mar 25 07:09 hsth_most
+drwxr-xr-x  2 hsth hsth 4096 Feb 23 08:30 Music
+drwxr-xr-x  2 hsth hsth 4096 Mar 28 13:09 Pictures
+drwxr-xr-x  2 hsth hsth 4096 Feb 23 08:30 Public
+drwx------  8 hsth hsth 4096 Mar 17 17:37 snap
+drwxrwxr-x  3 hsth hsth 4096 Feb 26 20:50 SSD
+drwxr-xr-x  2 hsth hsth 4096 Feb 23 08:30 Templates
+drwxrwxr-x  2 hsth hsth 4096 Mar  1 06:09 tmp
+drwxr-xr-x  2 hsth hsth 4096 Feb 23 08:30 Videos
+(base) hsth@hsth-YOGA-720-13IKB:~$ ls -l-a
+ls: invalid option -- '-'
+Try 'ls --help' for more information.
+(base) hsth@hsth-YOGA-720-13IKB:~$ ls -la
+total 156
+drwxr-xr-x 28 hsth hsth  4096 Mar 26 16:19 .
+drwxr-xr-x  3 root root  4096 Feb 23 07:47 ..
+drwxrwxr-x  3 hsth hsth  4096 Mar  1 06:19 .anaconda
+drwxrwxr-x 28 hsth hsth  4096 Mar  1 06:21 anaconda3
+-rw-------  1 hsth hsth 13262 Mar 28 11:41 .bash_history
+-rw-r--r--  1 hsth hsth   220 Feb 23 07:47 .bash_logout
+-rw-r--r--  1 hsth hsth  4242 Mar  1 06:18 .bashrc
+drwx------ 21 hsth hsth  4096 Mar 22 09:59 .cache
+drwxrwxr-x  2 hsth hsth  4096 Mar  1 06:20 .conda
+-rw-rw-r--  1 hsth hsth    23 Mar  1 06:19 .condarc
+drwx------ 25 hsth hsth  4096 Mar 27 07:05 .config
+drwxrwxr-x  3 hsth hsth  4096 Mar  1 06:19 .continuum
+drwxr-xr-x  2 hsth hsth  4096 Mar 24 21:31 Desktop
+drwxr-xr-x  2 hsth hsth  4096 Feb 23 08:30 Documents
+drwxr-xr-x  2 hsth hsth  4096 Mar 27 07:13 Downloads
+drwxrwxrwx 18 hsth hsth  4096 Mar 28 14:35 git
+-rw-rw-r--  1 hsth hsth    69 Mar  1 17:59 .gitconfig
+drwx------  3 hsth hsth  4096 Mar 28 08:24 .gnupg
+drwxrwxr-x  9 hsth hsth  4096 Mar 25 07:09 hsth_most
+drwx------  4 hsth hsth  4096 Mar 25 07:06 .local
+drwx------  4 hsth hsth  4096 Feb 23 09:46 .mozilla
+drwxr-xr-x  2 hsth hsth  4096 Feb 23 08:30 Music
+drwxr-xr-x  2 hsth hsth  4096 Mar 28 13:09 Pictures
+drwx------  3 hsth hsth  4096 Feb 23 13:19 .pki
+-rw-r--r--  1 hsth hsth   807 Feb 23 07:47 .profile
+drwxr-xr-x  2 hsth hsth  4096 Feb 23 08:30 Public
+-rw-------  1 hsth hsth    33 Mar 16 22:45 .python_history
+drwx------  8 hsth hsth  4096 Mar 17 17:37 snap
+drwxrwxr-x  3 hsth hsth  4096 Feb 26 20:50 SSD
+drwx------  2 hsth hsth  4096 Mar  2 06:15 .ssh
+-rw-r--r--  1 hsth hsth     0 Feb 23 09:50 .sudo_as_admin_successful
+drwxr-xr-x  2 hsth hsth  4096 Feb 23 08:30 Templates
+drwxrwxr-x  2 hsth hsth  4096 Mar  1 06:09 tmp
+drwxr-xr-x  2 hsth hsth  4096 Feb 23 08:30 Videos
+drwx------  5 hsth hsth  4096 Mar 28 13:41 .vnc
+drwxrwxr-x  3 hsth hsth  4096 Feb 23 13:19 .vscode
+(base) hsth@hsth-YOGA-720-13IKB:~$ cd .
+(base) hsth@hsth-YOGA-720-13IKB:~$ ls -la
+total 156
+drwxr-xr-x 28 hsth hsth  4096 Mar 26 16:19 .
+drwxr-xr-x  3 root root  4096 Feb 23 07:47 ..
+drwxrwxr-x  3 hsth hsth  4096 Mar  1 06:19 .anaconda
+drwxrwxr-x 28 hsth hsth  4096 Mar  1 06:21 anaconda3
+-rw-------  1 hsth hsth 13262 Mar 28 11:41 .bash_history
+-rw-r--r--  1 hsth hsth   220 Feb 23 07:47 .bash_logout
+-rw-r--r--  1 hsth hsth  4242 Mar  1 06:18 .bashrc
+drwx------ 21 hsth hsth  4096 Mar 22 09:59 .cache
+drwxrwxr-x  2 hsth hsth  4096 Mar  1 06:20 .conda
+-rw-rw-r--  1 hsth hsth    23 Mar  1 06:19 .condarc
+drwx------ 25 hsth hsth  4096 Mar 27 07:05 .config
+drwxrwxr-x  3 hsth hsth  4096 Mar  1 06:19 .continuum
+drwxr-xr-x  2 hsth hsth  4096 Mar 24 21:31 Desktop
+drwxr-xr-x  2 hsth hsth  4096 Feb 23 08:30 Documents
+drwxr-xr-x  2 hsth hsth  4096 Mar 27 07:13 Downloads
+drwxrwxrwx 18 hsth hsth  4096 Mar 28 14:35 git
+-rw-rw-r--  1 hsth hsth    69 Mar  1 17:59 .gitconfig
+drwx------  3 hsth hsth  4096 Mar 28 08:24 .gnupg
+drwxrwxr-x  9 hsth hsth  4096 Mar 25 07:09 hsth_most
+drwx------  4 hsth hsth  4096 Mar 25 07:06 .local
+drwx------  4 hsth hsth  4096 Feb 23 09:46 .mozilla
+drwxr-xr-x  2 hsth hsth  4096 Feb 23 08:30 Music
+drwxr-xr-x  2 hsth hsth  4096 Mar 28 13:09 Pictures
+drwx------  3 hsth hsth  4096 Feb 23 13:19 .pki
+-rw-r--r--  1 hsth hsth   807 Feb 23 07:47 .profile
+drwxr-xr-x  2 hsth hsth  4096 Feb 23 08:30 Public
+-rw-------  1 hsth hsth    33 Mar 16 22:45 .python_history
+drwx------  8 hsth hsth  4096 Mar 17 17:37 snap
+drwxrwxr-x  3 hsth hsth  4096 Feb 26 20:50 SSD
+drwx------  2 hsth hsth  4096 Mar  2 06:15 .ssh
+-rw-r--r--  1 hsth hsth     0 Feb 23 09:50 .sudo_as_admin_successful
+drwxr-xr-x  2 hsth hsth  4096 Feb 23 08:30 Templates
+drwxrwxr-x  2 hsth hsth  4096 Mar  1 06:09 tmp
+drwxr-xr-x  2 hsth hsth  4096 Feb 23 08:30 Videos
+drwx------  5 hsth hsth  4096 Mar 28 13:41 .vnc
+drwxrwxr-x  3 hsth hsth  4096 Feb 23 13:19 .vscode
+(base) hsth@hsth-YOGA-720-13IKB:~$ ls -a .*
+.bash_history  .bashrc   .gitconfig  .python_history
+.bash_logout   .condarc  .profile    .sudo_as_admin_successful
+
+.:
+.              .conda      .gitconfig  .profile                   tmp
+..             .condarc    .gnupg      Public                     Videos
+.anaconda      .config     hsth_most   .python_history            .vnc
+anaconda3      .continuum  .local      snap                       .vscode
+.bash_history  Desktop     .mozilla    SSD
+.bash_logout   Documents   Music       .ssh
+.bashrc        Downloads   Pictures    .sudo_as_admin_successful
+.cache         git         .pki        Templates
+
+..:
+.  ..  hsth
+
+.anaconda:
+.  ..  navigator
+
+.cache:
+.
+..
+event-sound-cache.tdb.fc5d4c09f7724db389d821bd06bace35.x86_64-pc-linux-gnu
+evolution
+fontconfig
+gnome-control-center
+gnome-disks
+gnome-initial-setup
+gnome-screenshot
+google-chrome
+gstreamer-1.0
+ibus
+ibus-table
+libgweather
+mesa_shader_cache
+mozilla
+obexd
+pip
+thumbnails
+tracker
+ubuntu-report
+update-manager-core
+
+.conda:
+.  ..  environments.txt
+
+.config:
+ .                      gnome-initial-setup-done     monitors.xml
+ ..                     gnome-session                nautilus
+ autostart              goa-1.0                      nemo
+ Code                   google-chrome                pulse
+ dconf                  gtk-3.0                      Slack
+ enchant                ibus                         TabNine
+ eog                    libreoffice                  teams
+ evolution              Microsoft                    update-notifier
+ gedit                 'Microsoft Teams - Preview'   user-dirs.dirs
+ gnome-control-center   mimeapps.list                user-dirs.locale
+
+.continuum:
+.  ..  anaconda-client
+
+.gnupg:
+.  ..  private-keys-v1.d  pubring.kbx  trustdb.gpg
+
+.local:
+.  ..  share  state
+
+.mozilla:
+.  ..  extensions  firefox
+
+.pki:
+.  ..  nssdb
+
+.ssh:
+.   22_03_01_hsth_posco      config          HSTHyeti220302.pub
+..  22_03_01_hsth_posco.pub  HSTHyeti220302  known_hosts
+
+.vnc:
+.   config.d    rsaKeys      vncchat.xml    vncviewer.log.bak
+..  identities  ViewerStore  vncviewer.log
+
+.vscode:
+.  ..  argv.json  extensions
+(base) hsth@hsth-YOGA-720-13IKB:~$ ls .*
+.bash_history  .bashrc   .gitconfig  .python_history
+.bash_logout   .condarc  .profile    .sudo_as_admin_successful
+
+.:
+anaconda3  Documents  git        Music     Public  SSD        tmp
+Desktop    Downloads  hsth_most  Pictures  snap    Templates  Videos
+
+..:
+hsth
+
+.anaconda:
+navigator
+
+.cache:
+event-sound-cache.tdb.fc5d4c09f7724db389d821bd06bace35.x86_64-pc-linux-gnu
+evolution
+fontconfig
+gnome-control-center
+gnome-disks
+gnome-initial-setup
+gnome-screenshot
+google-chrome
+gstreamer-1.0
+ibus
+ibus-table
+libgweather
+mesa_shader_cache
+mozilla
+obexd
+pip
+thumbnails
+tracker
+ubuntu-report
+update-manager-core
+
+.conda:
+environments.txt
+
+.config:
+ autostart                  goa-1.0                      nemo
+ Code                       google-chrome                pulse
+ dconf                      gtk-3.0                      Slack
+ enchant                    ibus                         TabNine
+ eog                        libreoffice                  teams
+ evolution                  Microsoft                    update-notifier
+ gedit                     'Microsoft Teams - Preview'   user-dirs.dirs
+ gnome-control-center       mimeapps.list                user-dirs.locale
+ gnome-initial-setup-done   monitors.xml
+ gnome-session              nautilus
+
+.continuum:
+anaconda-client
+
+.gnupg:
+private-keys-v1.d  pubring.kbx  trustdb.gpg
+
+.local:
+share  state
+
+.mozilla:
+extensions  firefox
+
+.pki:
+nssdb
+
+.ssh:
+22_03_01_hsth_posco      config          HSTHyeti220302.pub
+22_03_01_hsth_posco.pub  HSTHyeti220302  known_hosts
+
+.vnc:
+config.d    rsaKeys      vncchat.xml    vncviewer.log.bak
+identities  ViewerStore  vncviewer.log
+
+.vscode:
+argv.json  extensions
+(base) hsth@hsth-YOGA-720-13IKB:~$ ls ..
+hsth
+(base) hsth@hsth-YOGA-720-13IKB:~$ ls -a /git
+ls: cannot access '/git': No such file or directory
+(base) hsth@hsth-YOGA-720-13IKB:~$ ls -a ./git
+ .                   condorgpcell         ExternalJars   .logs
+ ..                  condorsetup2         gplearn        madetech
+'0 ______ VS Code'   .config              katas-python   .vscode
+ algs4               deap                 Lean           yeti_pi
+ build-run           easycut-smartbench   LivingCell
+(base) hsth@hsth-YOGA-720-13IKB:~$ ls ./git
+'0 ______ VS Code'   condorsetup2         gplearn        madetech
+ algs4               deap                 katas-python   yeti_pi
+ build-run           easycut-smartbench   Lean
+ condorgpcell        ExternalJars         LivingCell
+(base) hsth@hsth-YOGA-720-13IKB:~$ ls *.dir
+ls: cannot access '*.dir': No such file or directory
+(base) hsth@hsth-YOGA-720-13IKB:~$ ls ~/git
+'0 ______ VS Code'   condorsetup2         gplearn        madetech
+ algs4               deap                 katas-python   yeti_pi
+ build-run           easycut-smartbench   Lean
+ condorgpcell        ExternalJars         LivingCell
+(base) hsth@hsth-YOGA-720-13IKB:~$ git
+usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           <command> [<args>]
+
+These are common Git commands used in various situations:
+
+start a working area (see also: git help tutorial)
+   clone             Clone a repository into a new directory
+   init              Create an empty Git repository or reinitialise an existing one
+
+work on the current change (see also: git help everyday)
+   add               Add file contents to the index
+   mv                Move or rename a file, a directory, or a symlink
+   restore           Restore working tree files
+   rm                Remove files from the working tree and from the index
+   sparse-checkout   Initialise and modify the sparse-checkout
+
+examine the history and state (see also: git help revisions)
+   bisect            Use binary search to find the commit that introduced a bug
+   diff              Show changes between commits, commit and working tree, etc
+   grep              Print lines matching a pattern
+   log               Show commit logs
+   show              Show various types of objects
+   status            Show the working tree status
+
+grow, mark and tweak your common history
+   branch            List, create, or delete branches
+   commit            Record changes to the repository
+   merge             Join two or more development histories together
+   rebase            Reapply commits on top of another base tip
+   reset             Reset current HEAD to the specified state
+   switch            Switch branches
+   tag               Create, list, delete or verify a tag object signed with GPG
+
+collaborate (see also: git help workflows)
+   fetch             Download objects and refs from another repository
+   pull              Fetch from and integrate with another repository or a local branch
+   push              Update remote refs along with associated objects
+
+'git help -a' and 'git help -g' list available subcommands and some
+concept guides. See 'git help <command>' or 'git help <concept>'
+to read about a specific subcommand or concept.
+See 'git help git' for an overview of the system.
+(base) hsth@hsth-YOGA-720-13IKB:~$ cd git
+(base) hsth@hsth-YOGA-720-13IKB:~/git$ mkdir git-101
+(base) hsth@hsth-YOGA-720-13IKB:~/git$ ls
+'0 ______ VS Code'   condorsetup2         git-101        LivingCell
+ algs4               deap                 gplearn        madetech
+ build-run           easycut-smartbench   katas-python   yeti_pi
+ condorgpcell        ExternalJars         Lean
+(base) hsth@hsth-YOGA-720-13IKB:~/git$ cd git-101
+(base) hsth@hsth-YOGA-720-13IKB:~/git/git-101$ ls
+(base) hsth@hsth-YOGA-720-13IKB:~/git/git-101$ git init
+Initialised empty Git repository in /home/hsth/git/git-101/.git/
+(base) hsth@hsth-YOGA-720-13IKB:~/git/git-101$ touch index.html
+(base) hsth@hsth-YOGA-720-13IKB:~/git/git-101$ ls
+index.html
+(base) hsth@hsth-YOGA-720-13IKB:~/git/git-101$ edit index.html
+(base) hsth@hsth-YOGA-720-13IKB:~/git/git-101$ gedit index.html
+(base) hsth@hsth-YOGA-720-13IKB:~/git/git-101$ firefox
+(base) hsth@hsth-YOGA-720-13IKB:~/git/git-101$ firefox index.html
+(base) hsth@hsth-YOGA-720-13IKB:~/git/git-101$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	index.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+(base) hsth@hsth-YOGA-720-13IKB:~/git/git-101$ git add *
+(base) hsth@hsth-YOGA-720-13IKB:~/git/git-101$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+	new file:   index.html
+
+(base) hsth@hsth-YOGA-720-13IKB:~/git/git-101$ git commit -"CLI first attempt, ssh?"
+fatal: could not lookup commit LI first attempt, ssh?
+(base) hsth@hsth-YOGA-720-13IKB:~/git/git-101$ git commit --"CLI first attempt, ssh?"
+error: unknown option `CLI first attempt, ssh?'
+usage: git commit [<options>] [--] <pathspec>...
+
+    -q, --quiet           suppress summary after successful commit
+    -v, --verbose         show diff in commit message template
+
+Commit message options
+    -F, --file <file>     read message from file
+    --author <author>     override author for commit
+    --date <date>         override date for commit
+    -m, --message <message>
+                          commit message
+    -c, --reedit-message <commit>
+                          reuse and edit message from specified commit
+    -C, --reuse-message <commit>
+                          reuse message from specified commit
+    --fixup <commit>      use autosquash formatted message to fixup specified commit
+    --squash <commit>     use autosquash formatted message to squash specified commit
+    --reset-author        the commit is authored by me now (used with -C/-c/--amend)
+    -s, --signoff         add Signed-off-by:
+    -t, --template <file>
+                          use specified template file
+    -e, --edit            force edit of commit
+    --cleanup <mode>      how to strip spaces and #comments from message
+    --status              include status in commit message template
+    -S, --gpg-sign[=<key-id>]
+                          GPG sign commit
+
+Commit contents options
+    -a, --all             commit all changed files
+    -i, --include         add specified files to index for commit
+    --interactive         interactively add files
+    -p, --patch           interactively add changes
+    -o, --only            commit only specified files
+    -n, --no-verify       bypass pre-commit and commit-msg hooks
+    --dry-run             show what would be committed
+    --short               show status concisely
+    --branch              show branch information
+    --ahead-behind        compute full ahead/behind values
+    --porcelain           machine-readable output
+    --long                show status in long format (default)
+    -z, --null            terminate entries with NUL
+    --amend               amend previous commit
+    --no-post-rewrite     bypass post-rewrite hook
+    -u, --untracked-files[=<mode>]
+                          show untracked files, optional modes: all, normal, no. (Default: all)
+    --pathspec-from-file <file>
+                          read pathspec from file
+    --pathspec-file-nul   with --pathspec-from-file, pathspec elements are separated with NUL character
+
+(base) hsth@hsth-YOGA-720-13IKB:~/git/git-101$ git commit --message "CLI first attempt, ssh?"
+[master (root-commit) 95f1f51] CLI first attempt, ssh?
+ 1 file changed, 6 insertions(+)
+ create mode 100644 index.html
+(base) hsth@hsth-YOGA-720-13IKB:~/git/git-101$ git status
+On branch master
+nothing to commit, working tree clean
+(base) hsth@hsth-YOGA-720-13IKB:~/git/git-101$ git push
+fatal: No configured push destination.
+Either specify the URL from the command-line or configure a remote repository using
+
+    git remote add <name> <url>
+
+and then push using the remote name
+
+    git push <name>
+
+(base) hsth@hsth-YOGA-720-13IKB:~/git/git-101$ git remote add git-101
+usage: git remote add [<options>] <name> <url>
+
+    -f, --fetch           fetch the remote branches
+    --tags                import all tags and associated objects when fetching
+                          or do not fetch any tag at all (--no-tags)
+    -t, --track <branch>  branch(es) to track
+    -m, --master <branch>
+                          master branch
+    --mirror[=(push|fetch)]
+                          set up remote as a mirror to push to or fetch from
+
+(base) hsth@hsth-YOGA-720-13IKB:~/git/git-101$ git remote add -m git-101
+usage: git remote add [<options>] <name> <url>
+
+    -f, --fetch           fetch the remote branches
+    --tags                import all tags and associated objects when fetching
+                          or do not fetch any tag at all (--no-tags)
+    -t, --track <branch>  branch(es) to track
+    -m, --master <branch>
+                          master branch
+    --mirror[=(push|fetch)]
+                          set up remote as a mirror to push to or fetch from
+
+(base) hsth@hsth-YOGA-720-13IKB:~/git/git-101$ git remote add -mt git-101
+usage: git remote add [<options>] <name> <url>
+
+    -f, --fetch           fetch the remote branches
+    --tags                import all tags and associated objects when fetching
+                          or do not fetch any tag at all (--no-tags)
+    -t, --track <branch>  branch(es) to track
+    -m, --master <branch>
+                          master branch
+    --mirror[=(push|fetch)]
+                          set up remote as a mirror to push to or fetch from
+
+(base) hsth@hsth-YOGA-720-13IKB:~/git/git-101$ git status
+On branch master
+nothing to commit, working tree clean
+(base) hsth@hsth-YOGA-720-13IKB:~/git/git-101$ git diff
+diff --git a/index.html b/index.html
+index c694cd2..a7bc863 100644
+--- a/index.html
++++ b/index.html
+@@ -2,5 +2,6 @@
+     <head></head>
+     <body>
+         <h1>Coming soon, skills with Le Wagon</h1>
++        <h1>MORE DETAIL, can you see this?</h2>
+     </body>
+ </html>
+(base) hsth@hsth-YOGA-720-13IKB:~/git/git-101$ git add *
+(base) hsth@hsth-YOGA-720-13IKB:~/git/git-101$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	modified:   index.html
+
+(base) hsth@hsth-YOGA-720-13IKB:~/git/git-101$ /git commit
+bash: /git: No such file or directory
+(base) hsth@hsth-YOGA-720-13IKB:~/git/git-101$ git commit
+Aborting commit due to empty commit message.
+(base) hsth@hsth-YOGA-720-13IKB:~/git/git-101$ git commit --message "h2"
+[master b2c29c1] h2
+ 1 file changed, 1 insertion(+)
+(base) hsth@hsth-YOGA-720-13IKB:~/git/git-101$ git status
+On branch master
+nothing to commit, working tree clean
+(base) hsth@hsth-YOGA-720-13IKB:~/git/git-101$ git log
+commit b2c29c1474503a893999b3d939375e59dfd3148e (HEAD -> master)
+Author: hughharford <hugh.harford@poscoconsulting.com>
+Date:   Mon Mar 28 21:45:22 2022 +0100
+
+    h2
+
+commit 95f1f510f90cb23bd5050a8293990520b8f2bc1d
+Author: hughharford <hugh.harford@poscoconsulting.com>
+Date:   Mon Mar 28 21:40:12 2022 +0100
+
+    CLI first attempt, ssh?
+(base) hsth@hsth-YOGA-720-13IKB:~/git/git-101$ git lg
+git: 'lg' is not a git command. See 'git --help'.
+
+The most similar command is
+	log
+(base) hsth@hsth-YOGA-720-13IKB:~/git/git-101$ git push
+fatal: No configured push destination.
+Either specify the URL from the command-line or configure a remote repository using
+
+    git remote add <name> <url>
+
+and then push using the remote name
+
+    git push <name>
+
+(base) hsth@hsth-YOGA-720-13IKB:~/git/git-101$ git remote add -mt git-101 git@github.com:hughharford/git-101
+(base) hsth@hsth-YOGA-720-13IKB:~/git/git-101$ git push git-101
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream git-101 master
+
+(base) hsth@hsth-YOGA-720-13IKB:~/git/git-101$ git push --set-upstream git-101 master
+ERROR: Repository not found.
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+(base) hsth@hsth-YOGA-720-13IKB:~/git/git-101$ ls ../.config
+../.config
+(base) hsth@hsth-YOGA-720-13IKB:~/git/git-101$ gedit ../.config
+(base) hsth@hsth-YOGA-720-13IKB:~/git/git-101$ gedit .config
+(base) hsth@hsth-YOGA-720-13IKB:~/git/git-101$ gedit .git/.config
+(base) hsth@hsth-YOGA-720-13IKB:~/git/git-101$ ls -a
+.  ..  .git  index.html
+(base) hsth@hsth-YOGA-720-13IKB:~/git/git-101$ ls -a .git/
+.   branches        config       HEAD   index  logs     refs
+..  COMMIT_EDITMSG  description  hooks  info   objects
+(base) hsth@hsth-YOGA-720-13IKB:~/git/git-101$ gedit .git/config
+(base) hsth@hsth-YOGA-720-13IKB:~/git/git-101$ git push git-101
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream git-101 master
+
+(base) hsth@hsth-YOGA-720-13IKB:~/git/git-101$ git push --set-upstream git-101 master
+Warning: Identity file /home/hsth/.ssh/21_01_09 not accessible: No such file or directory.
+ERROR: Repository not found.
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+(base) hsth@hsth-YOGA-720-13IKB:~/git/git-101$ ssh -T git@github.com
+Hi hsthYETI! You've successfully authenticated, but GitHub does not provide shell access.
+(base) hsth@hsth-YOGA-720-13IKB:~/git/git-101$ git push --set-upstream git-101 master
+Warning: Identity file /home/hsth/.ssh/21_01_09 not accessible: No such file or directory.
+ERROR: Repository not found.
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+(base) hsth@hsth-YOGA-720-13IKB:~/git/git-101$ git remote set-url origin git@github.com:hughharford/condorgpcell.git
+fatal: No such remote 'origin'
+(base) hsth@hsth-YOGA-720-13IKB:~/git/git-101$ git remote set-url origin git@github.com:hughharford/c^Cit
+(base) hsth@hsth-YOGA-720-13IKB:~/git/git-101$ git remote set-rul master git@github.com:hughharford/git-101
+error: Unknown subcommand: set-rul
+usage: git remote [-v | --verbose]
+   or: git remote add [-t <branch>] [-m <master>] [-f] [--tags | --no-tags] [--mirror=<fetch|push>] <name> <url>
+   or: git remote rename <old> <new>
+   or: git remote remove <name>
+   or: git remote set-head <name> (-a | --auto | -d | --delete | <branch>)
+   or: git remote [-v | --verbose] show [-n] <name>
+   or: git remote prune [-n | --dry-run] <name>
+   or: git remote [-v | --verbose] update [-p | --prune] [(<group> | <remote>)...]
+   or: git remote set-branches [--add] <name> <branch>...
+   or: git remote get-url [--push] [--all] <name>
+   or: git remote set-url [--push] <name> <newurl> [<oldurl>]
+   or: git remote set-url --add <name> <newurl>
+   or: git remote set-url --delete <name> <url>
+
+    -v, --verbose         be verbose; must be placed before a subcommand
+
+(base) hsth@hsth-YOGA-720-13IKB:~/git/git-101$ git remote set-url master git@github.com:hughharford/git-101
+fatal: No such remote 'master'
+(base) hsth@hsth-YOGA-720-13IKB:~/git/git-101$ git remote set-url --add master git@github.com:hughharford/git-101
+fatal: No such remote 'master'
+(base) hsth@hsth-YOGA-720-13IKB:~/git/git-101$ git remote set-url --add git-101 git@github.com:hughharford/git-101
+(base) hsth@hsth-YOGA-720-13IKB:~/git/git-101$ git push --set-upstream git-101 master
+Warning: Identity file /home/hsth/.ssh/21_01_09 not accessible: No such file or directory.
+ERROR: Repository not found.
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+(base) hsth@hsth-YOGA-720-13IKB:~/git/git-101$ 
+
