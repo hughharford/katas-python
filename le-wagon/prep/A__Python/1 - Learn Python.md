@@ -1,10 +1,21 @@
 
-These are bookmarked as part of the System 
+References are bookmarked as part of the System 
 
-# DONE
+
+# TO DO:
+## 1.3 Offical Python Tutorial
+REF: https://docs.python.org/3/tutorial/
+## 
+## 1.x https://gto76.github.io/python-cheatsheet/
+
+# DONE:
 ## 1.1 Learn basic Python Syntax
 ## 1.2 Read Python Handbook (free code camp)
 
+
+
+
+# NOTES
 ## 1.1 Learn basic Python Syntax
 ### Learn Python Full Beginner Course:
 [Link to YouTube course](https://www.youtube.com/watch?v=rfscVS0vtbw)
