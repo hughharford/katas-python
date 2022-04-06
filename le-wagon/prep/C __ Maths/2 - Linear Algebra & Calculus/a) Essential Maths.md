@@ -1,11 +1,11 @@
 # CONTENTS:
-### a) First, take a look at the big picture
+### a) Essential Maths
 ### b) Linear Algebra
 ### c) Calculus
 _________________
 
 # NEEDS REVISIT: 
-1. .
+1. Logic: NOTES in Logic NOTES.md
 
 # DONE:
 1. Notation - SYSTEM working well
@@ -15,7 +15,7 @@ _________________
 
 # BOOKMARKS ETC:
 
-## a) First, take a look at the big picture:
+## a) Essential Maths
 
 ## [Essential Maths](https://web.archive.org/web/20210413232311/https://the-learning-machine.com/article/math/overview)
 _____________________
@@ -26,7 +26,10 @@ _____________________
 ### [Functions](https://web.archive.org/web/20210413231546/https://the-learning-machine.com/article/math/functions)
 See file Functions NOTES.md
 
-  
+### [Logic](https://web.archive.org/web/20210413230731/https://the-learning-machine.com/article/math/logic)  
+See file Logic NOTES.md
+
+
 ## ADVANCED
 
 ### [Sets](https://web.archive.org/web/20210413214217/https://the-learning-machine.com/article/math/sets)
