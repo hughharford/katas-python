@@ -1,0 +1,78 @@
+### [Functions](https://web.archive.org/web/20210413231546/https://the-learning-machine.com/article/math/functions)
+
+- $\color{yellow} f: A \to B$ denotes a function of set A to B
+- a relation of set A to B, so that $\color{yellow} a \in A$ is the first coordinate in exactly one ordered pair in $\color{yellow} f$ 
+- Therefore the cardinality of $\color{yellow}f$ matches A 
+- ## Image of a function
+  - If $\color{yellow} f(a,b) \in f$ then we write $\color{yellow} b = f(a)$ 
+  - then B is the **image** of A
+  - and  f **maps** A to B
+  - Hence, functions are sometimes called mappings
+- ## Pre-image of a function
+  - a is the pre-image of $\color{yellow} f(a)$
+  - <p align="left"> <img src="https://web.archive.org/web/20210413231546im_/https://the-learning-machine.com/static/published-articles/math/functions/assets/img/preimage-vs-image.svg" alt="" style="width:75%; border:0; background:white"></p>
+- ## Domain and Codomain of a function
+  - for $\color{yellow} f : A \to B$
+  - A is the domain, B is the codomain
+- ## Range of a function
+  - range is a subet of codomain, but not always equal
+  - for $f$ the range of f = the subset of B that appears as second coordinate in f
+  - $\color{yellow} range(f)=\{f(x):x \in A\}$
+  - Written as $\color{yellow} range(f)$
+- ### Example:
+  - with sets $\color{yellow}A={1,2,3}$ and $\color{yellow}B={x,y,z}$
+  - with the function $\color{yellow} f:A \to B$:
+    - $\color{yellow}f={(1,x),(2,y),(3,x)}$
+  - $\color{yellow}range(f)={x,y}$
+  - Note also that $\color{yellow}range(f)⊂B$ (subset)
+- ## Equality of functions
+  - Functions $\color{yellow}f:A→B$ and $\color{yellow}g:A→B$ are said to be equal if $\color{yellow}f(a)=g(a)$ for all $\color{yellow}a∈A$
+  - HSTH I.e. Inputs (domain) and Outputs (range) are the same
+- ## Inverse image of a function 
+  - Going the other way, so that: the inverse image of the range of a function is its domain
+- ## One-to-one functions / injective functions
+  - Also known as injective functions
+  - one-to-one function if no two elements of A have the same image in B
+  - For injective functions from set A to set B, it is always the case that the codomain has at least as many elements as the domain, $\color{yellow}|A|≤|B|$
+  - $\color{yellow}nb:  |Cardinality|$
+- ## Onto functions / surjective functions
+  - onto function if every element of the codomain B is the image of some element of the domain A. 
+  - also known as surjective functions
+  - so codomain is also the range of the function
+  - for surjective functions, the domain has at least as many elements as the codomain, $\color{yellow}|A|≥|B|$
+- ## Bijective functions
+  - bijective or a one-to-one correspondence if it is both one-to-one and onto
+  - bijective functions, $\color{yellow}|A|=|B|$
+  - So, if the cardinality of A and B is n, then there are **n!** possible bijective functions of the form $\color{yellow}f:A \to B$ between them
+  - __Bijective (one-to-one and onto):__
+  - <p align="left"> <img src="https://web.archive.org/web/20210413231546im_/https://the-learning-machine.com/static/published-articles/math/functions/assets/img/bijective.svg" alt="" style="width:75%; border:0; background:white"></p>
+- ## Identity function is bijective
+  - The identity function maps an element to itself
+  - It is defined as $\color{yellow}iA:A\to A$ 
+  - such that $\color{yellow}a=iA(a),∀a∈A$
+  - ∀ = for every
+  - ∈ = is a member of
+- ## Inverse function
+  - $\color{yellow} f^{−1} ={(b,a):(a,b)∈f}$
+  - i.e. image is the domain
+  - to have an inverse function, the original function $f$ must be bijective, both onto and one-to-one
+  - Further, if $f$ is bijective, then so is $f^{−1}$.
+- ## Preimage of an inverse function
+  - The preimage is a concept is analogous to the image of a function, but applied to the inverse (i.e. just the other way around)
+  - E.g. the image of the function == the preimage of the inverse function
+- ## Composition of functions
+  - The composition $\color{yellow} g ∘ f$ of the functions $\color{yellow} f:A\to B$ and $\color{yellow} g:B→C$ is a function from A to C
+  - such that
+$$\color{yellow} (g∘f)(a)=g(f(a)),∀a∈A$$
+  - ### Properties of composite functions:
+    - If f and g are injective (one-to-one), then so is $\color{yellow} g ∘ f$
+    - If f and g are surjective (onto), then so is $\color{yellow} g ∘ f$
+    - Thus, if f and g are bijective, then so is $\color{yellow} g ∘ f$.
+- ## Associative composite function
+  - A composition of functions f,g, and h is said to be associative if $\color{yellow}h∘(g∘f)=(h∘g)∘f$
+- ## The Pigeonhole Principle
+  - $\color{yellow}f:A→B$ between two finite sets A and B
+  - If $\color{yellow}|A|>|B|$ then f is not injective, because multiple elements in A will map to the same element in B
+  - If $\color{yellow}|A|<|B|$, then f is not surjective, because there are elements in B that are not the image of any element in A.
+  - SO:
+  - This observation is known as the **pigeonhole principle** in Mathematics and comes from the idea that if n objects (pigeons) are put into m containers (pigeon-holes), such that n>m, then some containers will end up containing more than one object.

@@ -1,9 +1,22 @@
 # CONTENTS
 
-## 1. Operator precedence with NOT AND & OR behaviour
-## 2. IMMUTABLE and MUTABLE Python datatypes
-
+## - Python Comprehensions (for Lists)
+## - Operator precedence with NOT AND & OR behaviour
+## - IMMUTABLE and MUTABLE Python datatypes
 ____
+
+
+# Python Comprehensions (for Lists)
+REF: https://www.freecodecamp.org/news/the-python-handbook/#listcomprehensionsinpython
+### Better here:
+REF: https://docs.python.org/3/tutorial/datastructures.html#list-comprehensions
+
+```Python
+data = [1,2,3,4,5,6]
+comp = [(ele - 0.1)**2 for ele in data if ele > 3]
+```
+gives:
+>    [15.209999999999999, 24.010000000000005, 34.81]
 
 
 # Operator precedence with NOT AND & OR behaviour

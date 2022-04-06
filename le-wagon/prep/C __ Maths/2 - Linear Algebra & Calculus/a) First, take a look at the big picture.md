@@ -4,6 +4,13 @@
 ### c) Calculus
 _________________
 
+# NEEDS REVISIT: 
+1. .
+
+# DONE:
+1. Notation - SYSTEM working well
+2. Functions: NOTES in Function NOTES.md
+
 
 
 # BOOKMARKS ETC:
@@ -17,16 +24,9 @@ _____________________
 ### [Notation SYSTEM](https://web.archive.org/web/20210413231704/https://the-learning-machine.com/article/math/notation)
 
 ### [Functions](https://web.archive.org/web/20210413231546/https://the-learning-machine.com/article/math/functions)
+See file Functions NOTES.md
 
-- $\color{yellow} f: A \to B$ denotes a function of set A to B
-- a relation of set A to B, so that $\color{yellow} a \in A$ is the first coordinate in exactly one ordered pair in $\color{yellow} f$ 
-- Therefore the cardinality of $\color{yellow}f$ matches A 
-- ## Image of a function
-- If $\color{yellow} f(a,b) \in f$ then we write $\color{yellow} b = f(a)$ 
-- then B is the **image** of A
-- and  f **maps** A to B
-- Hence, functions are sometimes called mappings
-
+  
 ## ADVANCED
 
 ### [Sets](https://web.archive.org/web/20210413214217/https://the-learning-machine.com/article/math/sets)
