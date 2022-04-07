@@ -10,6 +10,7 @@ _________________
 # DONE:
 1. Notation - SYSTEM working well
 2. Functions: NOTES in Function NOTES.md
+3. Counting: 
 
 
 
@@ -28,6 +29,11 @@ See file Functions NOTES.md
 
 ### [Logic](https://web.archive.org/web/20210413230731/https://the-learning-machine.com/article/math/logic)  
 See file Logic NOTES.md
+
+## REQUIRED
+
+### [Counting](https://web.archive.org/web/20210413231103/https://the-learning-machine.com/article/math/counting)
+
 
 
 ## ADVANCED
