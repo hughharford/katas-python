@@ -2,6 +2,7 @@
 ### a) Essential Maths
 ### b) Linear Algebra
 ### c) Calculus
+### d) Brighter Side of Mathematics
 _________________
 
 # NEEDS REVISIT: 
@@ -67,3 +68,8 @@ _____________________
 ## c) Calculus
 
 ### []()
+
+
+## d) Brighter Side of Mathematics
+
+### REF [Brighter Side of Mathematics](https://www.youtube.com/c/brightsideofmaths/playlists?view=50&sort=dd&shelf_id=3)
