@@ -1,6 +1,6 @@
-# LINEAR ALGEBRA
+# b) LINEAR ALGEBRA
 
-## CONTENTS
+## CONTENTS - Videos:
 
 1. Essense of Linear Algebra
 2. Getting Started with Linear Algebra
@@ -11,4 +11,6 @@ REF: https://www.youtube.com/watch?v=fNk_zzaMoSs&list=PLZHQObOWTQDPD3MizzM2xVFit
 
 ##  Getting Started with Linear Algebra
 REF: https://hadrienj.github.io/posts/Deep-Learning-Book-Series-Introduction/
+
+
 

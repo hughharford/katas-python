@@ -41,6 +41,16 @@ Use three dashes to draw an horizontal line like above or below here
 
 > LATEX
 
+
+MATRIX:
+$\color{yellow} \begin{bmatrix} a & b \\ c & d \end{bmatrix}$
+
+FOR example:
+  $\color{yellow} 
+  \begin{bmatrix} 
+  a_{1,1} … a_{1,n} \\⋮⋱⋮\\ a_{m,1} … a_{m,n}
+  \end{bmatrix}$
+
 ...
 
 > IMAGES LIKE THIS, WITH FORMATTING:
