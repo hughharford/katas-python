@@ -5,6 +5,7 @@
   2. ### Vector geometry
   3. ### Linear combination of vectors
   4. ### Dot product of vectors
+  5. ### Systems of linear equations
 
 
 ### [DataTypes:](https://web.archive.org/web/20210413222941/https://the-learning-machine.com/article/linear-algebra/data-types)
@@ -46,7 +47,7 @@ Has been covered in the Linear Algebra
 - Essentially, we use geometry to represent vectors, this is super helpful 
 ## Vector magnitude and direction
 - The magnitude of a vector is measured in terms of its **NORM**. The `p-norm`, for $\color{yellow} p≥1$, provides a generalized way of computing any `norm of a vector`.
-  $$\color{yellow} ||a||p = (\sum^{n}_{i}=|a_i|^p)^{\frac{1}{p}}$$
+  $$\color{yellow} ||a||_p = (\sum^{n}_{i}=|a_i|^p)^{\frac{1}{p}}$$
 - There are 3 well known and popular NORMS
 - L1, L2, and L$\infty$
 - L1: `Manhattan or Taxi-cab norm` ___ $\color{yellow} ||a||_1$
@@ -54,6 +55,8 @@ Has been covered in the Linear Algebra
 - L$\infty$: `max norm` ___ $\color{yellow} ||a||_\infty$
 - ## UNIT NORM and Unit Vector:
   - A vector with unit Euclidean norm, $\color{yellow} ||a||_2=1$, is the unit vector
+  - Unit vectors X and Y axes are, for the horizontal and vertical axis respectively:
+  $\color{yellow} x=[0,1]$ and $\color{yellow} y=[1,0]$
   - Any vector can be normalized to a unit vector by dividing it with its norm, for example, the Euclidean norm.
   - ## $\color{yellow} a = \frac{a}{∣∣a∣∣_2}$
   - ## **`a`** has the same direction as that of the original vector, but has unit-magnitude.
@@ -94,4 +97,23 @@ Has been covered in the Linear Algebra
     - The minimum 2 vectors to span the whole of a 2D space. These 2 vectors are the **`BASIS SET`** of that space
 
 ## [Dot product of vectors](http://web.archive.org/web/20210413224828/https://the-learning-machine.com/article/linear-algebra/dot-product-of-vectors): - `**warm-up**`
-## []{}
+  - ### Dot product
+    - dot product of is the sum of the element-wise product
+$$\color{yellow} a\cdot b = \sum^n_i=a_ib_i$$
+
+  - ### Angle between two vectors
+  - If `θ` is the angle between two vectors `a` and `b` in the Euclidean space, then 
+$$\color{yellow} a\cdot b = ||a||_2||b||_2 cosθ$$
+  - Unit vectors X and Y axes are: $\color{yellow} x=[0,1]$ and $\color{yellow} y[1,0]$ for the horizontal and vertical axis respectively
+  - Their dot product is zero. That is, $\color{yellow} x⋅y=0$ as the two axes are perpendicular!
+  - ### From dot product to magnitude
+  - The dot product of a vector with itself is:
+    - $\color{yellow} x⋅x=||x||_2||x||_2cos0$
+      - where $\color{yellow} ||x||_2$ is the Euclidean Norm
+    - $\color{yellow} = ||x||_2^2$ 
+      - ie. the Euclidean Norm squared
+    - `as angle between a vector and itself is 0 and cos0=1`
+    - 
+
+### [Systems of linear equations](http://web.archive.org/web/20210413224828/https://the-learning-machine.com/article/linear-algebra/systems-of-linear-equations) - `**warm-up**`  **(important)**
+  
