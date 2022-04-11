@@ -1,6 +1,11 @@
 # A) LINEAR ALGEBRA NOTES
 ## First, take a look at the big picture (note, part of part a!)
 
+  1. ### DataTypes
+  2. ### Vector geometry
+  3. ### Linear combination of vectors
+  4. ### Dot product of vectors
+
 
 ### [DataTypes:](https://web.archive.org/web/20210413222941/https://the-learning-machine.com/article/linear-algebra/data-types)
 - Scalars
@@ -74,10 +79,19 @@ Has been covered in the Linear Algebra
     - The new trajectory and the new speed is a result of two conditions prior to the strike.
       - `The speed of the object a relative to that of the object b`
       - `The direction of the object a with respect to that of the object b`
-- Resulting vector $\color{yellow} c=αa+βb$
-- 
+  - Resulting vector $\color{yellow} c=αa+βb$
+  - 
+  - ### **Linear combination: An operation of scaling each vector and summing them up**
+  - A linear combination of m vectors, $\color{yellow} a_i∈ R^n,∀i ∈\{{1,…,m}\}$ is defined as:
+    $$\color{yellow} c = \sum^{m}_{i=1} \alpha_ia_i$$
+  - If the $\color{yellow} α_i$ are constrained to be positive and sum to one, $\color{yellow} \sum_{i} α_i=1,∀ α_i≥0$, then, the linear combination is more specifically known as a `CONVEX COMBINATION`
+  - ### **Span, basis, and null-space**
+    - The `set of all vectors obtainable` by a linear combination of a given set of vectors is known as the **`SPAN`** of those vectors:
+  $$\color{yellow} span(\{a1,…,am\})=\{c∈R^n: c=\sum^m_i=1α_ia_i,∀α_i∈R \}$$
+    - NOTE Crucial point: 
+      - any two input vectors can be a basis for the 2-dimensional space. 
+      - Unless the two input vectors are merely `scaled versions of each other`. I.e. work along the same axis / line 
+    - The minimum 2 vectors to span the whole of a 2D space. These 2 vectors are the **`BASIS SET`** of that space
 
-### []()
-
-
-### []()
+## [Dot product of vectors](http://web.archive.org/web/20210413224828/https://the-learning-machine.com/article/linear-algebra/dot-product-of-vectors): - `**warm-up**`
+## []{}

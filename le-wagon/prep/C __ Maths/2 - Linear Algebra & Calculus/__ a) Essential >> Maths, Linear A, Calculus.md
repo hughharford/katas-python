@@ -5,11 +5,13 @@
      - Logic, Counting
 ### b) Linear Algebra
    - Data types
-   - # UNDERWAY:
+   - # DONE:
    - [Vector geometry](http://web.archive.org/web/20210413224828/https://the-learning-machine.com/article/linear-algebra/vector-geometry): - `**warm-up**`
-   - # TO START
    - [Linear combination of vectors](http://web.archive.org/web/20210413224828/https://the-learning-machine.com/article/linear-algebra/linear-combination-of-vectors): - `**warm-up**`
+   - # UNDERWAY
    - [Dot product of vectors](http://web.archive.org/web/20210413224828/https://the-learning-machine.com/article/linear-algebra/dot-product-of-vectors): - `**warm-up**`
+   - # TO START
+   - 
    - [Orthogonalization of vectors](http://web.archive.org/web/20210413224828/https://the-learning-machine.com/article/linear-algebra/orthogonalization-of-vectors) - `**advanced**`
    - [Systems of linear equations](http://web.archive.org/web/20210413224828/https://the-learning-machine.com/article/linear-algebra/systems-of-linear-equations) - `**warm-up**`  **(important)**
    - [Matrix rank](http://web.archive.org/web/20210413224828/https://the-learning-machine.com/article/linear-algebra/rank-of-a-matrix) - `**required**`
