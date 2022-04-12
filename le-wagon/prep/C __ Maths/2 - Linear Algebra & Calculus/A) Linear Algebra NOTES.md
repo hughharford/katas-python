@@ -5,7 +5,9 @@
   2. ### Vector geometry
   3. ### Linear combination of vectors
   4. ### Dot product of vectors
-  5. ### Systems of linear equations
+  5. ### Systems of linear equations (NEEDS REVISION)
+  6. ### Matrix Rank
+  7. ### Types of matrices
 
 
 ### [DataTypes:](https://web.archive.org/web/20210413222941/https://the-learning-machine.com/article/linear-algebra/data-types)
@@ -116,4 +118,51 @@ $$\color{yellow} a\cdot b = ||a||_2||b||_2 cosθ$$
     - 
 
 ### [Systems of linear equations](http://web.archive.org/web/20210413224828/https://the-learning-machine.com/article/linear-algebra/systems-of-linear-equations) - `**warm-up**`  **(important)**
-  
+  - IMPORTANT:
+    - Linear Algebra was developed to solve systems of linear equations. So it is crucial we understand some basics about solving linear equations here.
+ - The Classical way to solve a pair of simultaneous equations is:
+    - First eliminate `x` to arrive at an equation in one variable `y`. This mechanical process is known as the process of **`Gaussian elimination`**. 
+    - This is a general purpose strategy to solve equations in any number of unknown variables. 
+  - **SUMMARY**:
+    - `To be able to solve equations in n unknown variables, you need exactly n independent and consistent equations.`
+    - To solve equations in n variables, you need n linearly independent rows and n linearly independent columns in the matrix A.
+
+### [Matrix rank](http://web.archive.org/web/20210413224828/https://the-learning-machine.com/article/linear-algebra/rank-of-a-matrix) - `**required**`
+  - ### Matrix rank
+    - `Row Rank` == number of linearly independent rows of a matrix
+    - `Column Rank` == the number of linearly independent columns of a matrix
+    - A fundamental result of linear algebra states that:
+      - The row rank and column rank of any matrix are always equal. 
+  - THUS, the common number of independent rows or columns is simply the **`rank of the matrix`**.
+  - Max possible rank of a matrix is less than the lesser of the number of columns or rows 
+    - $\color{yellow} rank(\bold{A})≤min(m,n),\bold{A}∈R^{m×n}$
+  - ### Fullness and deficiency
+    - **`full row rank matrix`** means every row is linearly indepedent
+    - **`full column rank matrix`** means the same for every column
+    - ## **`full rank`** if it has the maximum achievable rank for a matrix of its size. I.e. Rank = size of matrix
+    - A matrix that is not full rank , is considered to be **`rank deficient`**.
+  - ### NOTE: a full-rank matrix is required to find a solution.
+
+### [Types of matrices](http://web.archive.org/web/20210413224828/https://the-learning-machine.com/article/linear-algebra/types-of-matrices) - `**required**`
+  - ### Introduction
+    - Some matrix operations and theory apply to special types of matrices, so it is good to be aware of them
+    - Attempt to provide a: 
+      - comprehensive overview of the various types of matrices
+      - comment on the desirability of certain matrix types:
+        - ### Square and rectangular matrices
+        - ### Symmetric matrix
+        - ### Diagonal matrix
+        - ### Identity matrix
+        - ### Triangular matrices
+        - ### Orthogonal matrix
+        - ### Matrices by definiteness
+        - ### Hermitian and unitary matrices
+
+  - ### The good, the bad, and the ugly matrix
+      - First, let's talk about the ugliest of all. A rectangular matrix that is also singular. We cannot invert it. Eigendecomposition is not defined for it. Only thing we can definitely do is a singular value decomposition on it.
+      - Among bad matrices, there are levels of bad. The worst are those that are singular, even if they are square or symmetric. The better ones are non-singular matrices that are also symmetric or at least square. They are invertible and also have an eigendecomposition.
+      - The best matrices are the ones that are easier to work with. Identity, diagonal, orthogonal, and positive definite matrices are the best because of their rich properties and theory. 
+  - ### Relationships among matrix types
+    - The below summarizes important relationships among the popular matrix types.
+    - It is not a Venn-diagram in the true sense, but just shows containment. For example, all orthogonal matrices are invertible.
+  <p align="center"> <img src="https://web.archive.org/web/20210413225435im_/https://the-learning-machine.com/static/published-articles/linear-algebra/types-of-matrices/assets/img/matrix-hierarchy.svg" alt="" style="width:75%; border:0; background:white"></p>
