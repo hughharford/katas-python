@@ -6,6 +6,9 @@
   3. ### Linear combination of vectors
   4. ### Dot product of vectors
   5. ### Systems of linear equations
+  6. ...
+  7. ...
+  8. ### Matrix geometry
 
 
 ### [DataTypes:](https://web.archive.org/web/20210413222941/https://the-learning-machine.com/article/linear-algebra/data-types)
@@ -116,4 +119,10 @@ $$\color{yellow} a\cdot b = ||a||_2||b||_2 cosθ$$
     - 
 
 ### [Systems of linear equations](http://web.archive.org/web/20210413224828/https://the-learning-machine.com/article/linear-algebra/systems-of-linear-equations) - `**warm-up**`  **(important)**
+
+
+# OTHERS OTHERS TO BE PULLED!
+
+
+### [Matrix geometry](http://web.archive.org/web/20210413224828/https://the-learning-machine.com/article/linear-algebra/matrix-geometry): - `**required**` **(great)**
   
