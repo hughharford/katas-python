@@ -10,17 +10,18 @@
    - [Linear combination of vectors](http://web.archive.org/web/20210413224828/https://the-learning-machine.com/article/linear-algebra/linear-combination-of-vectors): - `**warm-up**`
    - [Dot product of vectors](http://web.archive.org/web/20210413224828/https://the-learning-machine.com/article/linear-algebra/dot-product-of-vectors): - `**warm-up**`
 
+   - [Matrix rank](http://web.archive.org/web/20210413224828/https://the-learning-machine.com/article/linear-algebra/rank-of-a-matrix) - `**required**`
+   - [Matrix rank](http://web.archive.org/web/20210413224828/https://the-learning-machine.com/article/linear-algebra/rank-of-a-matrix) - `**required**`
+   - [Types of matrices](http://web.archive.org/web/20210413224828/https://the-learning-machine.com/article/linear-algebra/types-of-matrices) - `**required**`
+   - 
 - SYSTEMS OF LINEAR EQUATIONS IN HERE
 - 
-   - [Matrix rank](http://web.archive.org/web/20210413224828/https://the-learning-machine.com/article/linear-algebra/rank-of-a-matrix) - `**required**`
    - # NEEDS REVISIION
    - [Systems of linear equations](http://web.archive.org/web/20210413224828/https://the-learning-machine.com/article/linear-algebra/systems-of-linear-equations) - `**warm-up**`  **(important)**
    - 
    - [Matrix geometry](http://web.archive.org/web/20210413224828/https://the-learning-machine.com/article/linear-algebra/matrix-geometry): - `**required**` **(great)**
    - 
    - # DONE but other machine...
-   - [Matrix rank](http://web.archive.org/web/20210413224828/https://the-learning-machine.com/article/linear-algebra/rank-of-a-matrix) - `**required**`
-   - [Types of matrices](http://web.archive.org/web/20210413224828/https://the-learning-machine.com/article/linear-algebra/types-of-matrices) - `**required**`
    - # TO START
 
    - [Matrix inverse](http://web.archive.org/web/20210413224828/https://the-learning-machine.com/article/linear-algebra/matrix-inverse) - `**required**`
