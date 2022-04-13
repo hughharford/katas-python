@@ -166,3 +166,22 @@ $$\color{yellow} a\cdot b = ||a||_2||b||_2 cosθ$$
     - The below summarizes important relationships among the popular matrix types.
     - It is not a Venn-diagram in the true sense, but just shows containment. For example, all orthogonal matrices are invertible.
   <p align="center"> <img src="https://web.archive.org/web/20210413225435im_/https://the-learning-machine.com/static/published-articles/linear-algebra/types-of-matrices/assets/img/matrix-hierarchy.svg" alt="" style="width:75%; border:0; background:white"></p>
+
+  - ### Types of Matrix
+      - ### Square and rectangular matrices
+        - A square matrix is one with an equal number of rows and columns. Matrices with unequal rows and columns are known as rectangular
+      - ### Symmetric matrix
+      - A symmetric matrix is one with the exact same entries on either side of the main diagonal.
+      - That means A is symmetric if and only if:
+      - $\color{yellow} ai,j=aj,i for all i,j∈{1,…,n}$
+      - ### Diagonal matrix
+      - diagonal matrix is a square symmetric matrix one with non-zero elements along the main diagonal and zeros elsewhere.
+      - It is usually denoted as $\color{yellow} diag(d1,…,dn)$
+      - ### Identity matrix
+      - An identity matrix is a diagonal matrix that has 1's along the main diagonal and 0s everywhere else.
+      - It is usually denoted as I, such that:
+      - $\color{yellow} Ii,j=\begin 1 , if i=j0 , if i≠j$
+      - ### Triangular matrices
+      - ### Orthogonal matrix
+      - ### Matrices by definiteness
+      - ### Hermitian and unitary matrices
