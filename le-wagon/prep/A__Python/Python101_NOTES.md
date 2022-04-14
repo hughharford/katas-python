@@ -75,3 +75,34 @@
         
     return columns
   ```
+
+  ### Python101 day 3 - Dicts
+  - For loop versus comprehension example 
+  - Code Kata name:
+    - `COUNTING DUPLICATES`
+    - n.b. must use DICTS
+  - Good example (with comprehension):
+
+  - Better solution from CodeWars: (but this doesn't use a dict!)
+    ```Python
+        def duplicate_count(s):
+          return len([c for c in set(s.lower()) if s.lower().count(c)>1])
+    ```
+
+  - My solution
+    ```Python
+      def duplicate_count(text):
+        # print(text)
+        dups = {}
+        for char in text:
+            if dups.get(char.lower(), 0) == 0:
+                dups[char.lower()] = 1
+            else:
+                dups[char.lower()] = dups[char.lower()] + 1
+            
+        return len([value for value in dups.values() if value > 1])
+
+    ## ATTEMPTS at comprehensions:
+    # new_dict_comp = {key:dups.value[key] for key,value in dups if dups.value[key] > 0}
+    # sum({(True if value > 1) for value in dups})
+    ```

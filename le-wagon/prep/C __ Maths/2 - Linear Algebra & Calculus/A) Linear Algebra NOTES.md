@@ -104,7 +104,7 @@ Has been covered in the Linear Algebra
 $$\color{yellow} a\cdot b = \sum^n_i=a_ib_i$$
 
   - ### Angle between two vectors
-  - If `θ` is the angle between two vectors `a` and `b` in the Euclidean space, then 
+    - If `θ` is the angle between two vectors `a` and `b` in the Euclidean space, then 
 $$\color{yellow} a\cdot b = ||a||_2||b||_2 cosθ$$
   - Unit vectors X and Y axes are: $\color{yellow} x=[0,1]$ and $\color{yellow} y[1,0]$ for the horizontal and vertical axis respectively
   - Their dot product is zero. That is, $\color{yellow} x⋅y=0$ as the two axes are perpendicular!
@@ -115,7 +115,7 @@ $$\color{yellow} a\cdot b = ||a||_2||b||_2 cosθ$$
     - $\color{yellow} = ||x||_2^2$ 
       - ie. the Euclidean Norm squared
     - `as angle between a vector and itself is 0 and cos0=1`
-    - 
+  
 
 ### [Systems of linear equations](http://web.archive.org/web/20210413224828/https://the-learning-machine.com/article/linear-algebra/systems-of-linear-equations) - `**warm-up**`  **(important)**
   - IMPORTANT:

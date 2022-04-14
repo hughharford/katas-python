@@ -1,0 +1,165 @@
+R_SMALL = {
+    'I': 1, 
+    'II': 2, 
+    'III': 3,
+    'IV': 4,
+    'V': 5,
+    'VI': 6,
+    'VII': 7,
+    'VIII': 8,
+    'IX': 9
+    }
+R_MAJOR = {
+    'V': 5,
+    'X': 10,
+    'XX': 20,
+    'XXX': 30,
+    'XL': 40,
+    'L': 50,
+    'LX': 60,
+    'LXX': 70,
+    'LXXX': 80,
+    'XC': 90,
+    'C': 100,
+    'D': 500,
+    'M': 1000
+    }
+
+def roman_to_int(roman):
+    print(roman)
+    r_int = None
+    if roman in R_SMALL:
+        r_int = R_SMALL[roman]
+    elif roman in R_MAJOR:
+        r_int = R_MAJOR[roman]
+    else:
+        # split_by_alpha = sorted(roman)
+        # print(split_by_alpha)
+        
+        # print('more complex... needs work')
+        
+        # check if and what the major is
+        count_majors = 0
+        majors = {}
+        major = 0
+        for z in range(len(roman)):
+            if roman[z] in R_MAJOR:
+                count_majors += 1
+                majors[roman[z]] = R_MAJOR[roman[z]]
+                if major < R_MAJOR[roman[z]]:
+                    major = R_MAJOR[roman[z]]
+        print(f'majors: {majors} ___ major = {major}')        
+                
+        if count_majors == 1 or major:
+        # greatest is 1st digit (add what's to the right)
+            if roman[1:] in R_SMALL:
+                # print(f'partially RHS in R_SMALL: {roman[1:]}')
+                r_int = R_MAJOR[roman[0]] + R_SMALL[roman[1:]]
+                return r_int
+
+            # assume greatest on right (subtract what's to the left)
+            if roman[:-1] in R_SMALL:
+                # print(f'partially LHS in R_SMALL: {roman[:-1]}')
+                r_int = - R_SMALL[roman[:-1]] + R_MAJOR[roman[0]]
+                return r_int
+
+        elif count_majors >= 2:
+            print("this'll be tricky")
+    return r_int
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Do not modify the code below:
+print("##########################################")
+print("##################TESTS###################")
+print("##########################################\n")
+import os
+
+print("Testing with 4")
+if roman_to_int("IV") == 4:
+    os.system("echo '\e[32mCorrect\e[0m'")
+else:
+	os.system("echo '\e[31mIncorrect\e[0m'")
+
+print("Testing with 12")
+if roman_to_int("XII") == 12:
+    os.system("echo '\e[32mCorrect\e[0m'")
+else:
+	os.system("echo '\e[31mIncorrect\e[0m'")
+
+print("Testing with 14")
+if roman_to_int("XIV") == 14:
+    os.system("echo '\e[32mCorrect\e[0m'")
+else:
+	os.system("echo '\e[31mIncorrect\e[0m'")
+
+print("Testing with 19")
+if roman_to_int("XIX") == 19:
+    os.system("echo '\e[32mCorrect\e[0m'")
+else:
+	os.system("echo '\e[31mIncorrect\e[0m'")
+
+print("Testing with 49")
+if roman_to_int("XLIX") == 49:
+    os.system("echo '\e[32mCorrect\e[0m'")
+else:
+	os.system("echo '\e[31mIncorrect\e[0m'")
+
+print("Testing with 78")
+if roman_to_int("LXXVIII") == 78:
+    os.system("echo '\e[32mCorrect\e[0m'")
+else:
+	os.system("echo '\e[31mIncorrect\e[0m'")
+
+print("Testing with 79")
+if roman_to_int("LXXIX") == 79:
+    os.system("echo '\e[32mCorrect\e[0m'")
+else:
+	os.system("echo '\e[31mIncorrect\e[0m'")
+
+print("Testing with 101")
+if roman_to_int("CI") == 101:
+    os.system("echo '\e[32mCorrect\e[0m'")
+else:
+	os.system("echo '\e[31mIncorrect\e[0m'")
+    
+print("Testing 499")
+if roman_to_int("CDXCIX") == 499:
+    os.system("echo '\e[32mCorrect\e[0m'")
+else:
+	os.system("echo '\e[31mIncorrect\e[0m'")
+    
+print("Testing 1006")
+if roman_to_int("MVI") == 1006:
+    os.system("echo '\e[32mCorrect\e[0m'")
+else:
+	os.system("echo '\e[31mIncorrect\e[0m'")
+    
+print("Testing with 1989")
+if roman_to_int("MCMLXXXIX") == 1989:
+    os.system("echo '\e[32mCorrect\e[0m'")
+else:
+	os.system("echo '\e[31mIncorrect\e[0m'")
+
+
+    
+    
+    
+    
