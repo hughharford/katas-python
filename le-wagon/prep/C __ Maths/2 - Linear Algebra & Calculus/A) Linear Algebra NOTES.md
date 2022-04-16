@@ -180,8 +180,18 @@ $$\color{yellow} a\cdot b = ||a||_2||b||_2 cosθ$$
       - ### Identity matrix
       - An identity matrix is a diagonal matrix that has 1's along the main diagonal and 0s everywhere else.
       - It is usually denoted as I, such that:
-      - $\color{yellow} Ii,j=\begin 1 , if i=j0 , if i≠j$
+      - $\color{yellow} I_i,j=\{ 1 , if i=j0 if i≠j$
       - ### Triangular matrices
       - ### Orthogonal matrix
       - ### Matrices by definiteness
+      - There are also classes of matrices based on their definiteness, a general concept in mathematics for quadratic forms. So, a square symmetric matrix A∈Rn×n is called:
+        - positive definite if $\color{yellow} xTAx>0,∀x∈Rn$
+        - positive semi-definite if $\color{yellow} xTAx≥0,∀x∈Rn$
+        - negative definite if $\color{yellow}xTAx<0,∀x∈Rn$
+        - negative semi-definite if $\color{yellow}xTAx≤0,∀x∈Rn$
+        - indefinite if $\color{yellow}(xTAx)(yTAy)<0$ ,for some x∈Rn and y∈Rn
+
       - ### Hermitian and unitary matrices
+      - A Hermitian matrix is the complex analogue of real symmetric matrix.
+      - It is a complex square matrix that is equal to its own conjugate transpose.
+      - A Unitary matrix is the complex analogue of real orthogonal matrix.
