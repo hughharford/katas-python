@@ -3,11 +3,16 @@
 
 # examples with notes:
   1. GROUPBY with COUNT
-  2. df.groupby(df['index'])['other_column'].count().reset_index()
-     1. group by 'index' and count the 'other column'
-     2. reset index as counted output per index will be fewer rows than df
-     3. cannot assign immediately back to df!
-  3.
+     1. df.groupby(df['index'])['other_column'].count().reset_index()
+        1. group by 'index' and count the 'other column'
+        2. reset index as counted output per index will be fewer rows than df
+        3. cannot assign immediately back to df!
+  2. MAP for df.series - with lambda function to standardise the data
+     1. df['series_name'].map(lambda x: (x - var_mean) / var_sigma)
+        1. was used in a function
+
+
+
 
 # Map and Apply
 ```python
