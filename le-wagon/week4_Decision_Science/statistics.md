@@ -53,14 +53,19 @@
         1.  Use the np.log() function, then take the intercept as the coefficient
         2.  or use SNS:
             1.  sns.logit()
-    8.  Interpretation
+    8.  N.B:
+        1.  Use of R^2 in logistic regression
+            1.  It is valid in comparing multiple models trying to predict the same outcome with the same dataset
+            2.  It is invalid in comparing different datasets
+
+    9.  Interpretation
         1.  p-values work in a similar way
         2.  t-scores don't apply - binary process, so can use z-score
         3.  Goodness of fit: psuedo R^2
             1.  1-LL(pred)/LL(actual)
         4.  log-likelihood: closer to 0 is better (range: -minus inv to 0)
             1.  not as descriptive as R^2, but good for comparing models
-    9.  Multicolinearity
+    10. Multicolinearity
         1.  Can't keep all the other variables constant while we look at and vary one
         2.  Matrices of full rank are required - these avoid colinearity
         3.  if colinearity => cannot really trust the p-values and other results
@@ -71,8 +76,9 @@
             3.  Make sure to scale your data - linear regression is used by VIF
                 1.  > 10 means potential cause for concern
                     1.  Take out that feature, and run again (start at the top of the list, go from there)
-            4.  from statsmodels.stats.outline_influence import variance_inflation_factor as vif
-    10. # **SUMMARY - REGRESSION CHEAT SHEET**
+            4.  **IMPORT STATEMENT**
+                1.  from statsmodels.stats.outliers_influence import variance_inflation_factor as vif
+    11. # **SUMMARY - REGRESSION CHEAT SHEET**
         1.  Goodness of fit
             1. How well does our y-pred explain the true y
             2. use:

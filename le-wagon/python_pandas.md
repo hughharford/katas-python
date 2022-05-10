@@ -10,6 +10,10 @@
   2. MAP for df.series - with lambda function to standardise the data
      1. df['series_name'].map(lambda x: (x - var_mean) / var_sigma)
         1. was used in a function
+  3. SIMPLE QUERY in PANDAS:
+     1. DF_name = 'orders'
+     2. DF.series_name = 'number_of_sellers' & 'order_id'
+     3. orders.query("number_of_sellers>1")['order_id'].count()
 
 
 
