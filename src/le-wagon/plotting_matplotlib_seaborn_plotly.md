@@ -23,8 +23,12 @@
         3. specify the x,y, and data
      2. to select a sample, use:
         1. sns.regplot(x='review_score', y='delay_vs_expected', data=orders2.sample(10, random_state=6), ci=95)
+  3. Scatter plot of a 2-d
+     1. sns.scatterplot(data=X, x=?, y=?);
+  4. CountPlot to see counts of the classes in a y_train, for example:
+     1. sns.countplot(x=y_train)
 
-  3. Example EDA = Exploratory Data Analysis:
+  5. Example EDA = Exploratory Data Analysis:
      1. NB this uses sellers a pandas DF
      2. matplotlib as plt
      3. seaborn as sns
